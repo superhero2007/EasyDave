@@ -1,0 +1,7 @@
+<div class="bbs-paginator-container">
+  <div class="bbs-page-numbers-container">
+    <p class="bbs-page-number" [class.current]="page === currentPage" *ngFor="let page of getPagesNumbers()"
+       (click)="selectPage(page)">{{page+1}}</p>
+  </div>
+  <ng-content></ng-content>
+</div>

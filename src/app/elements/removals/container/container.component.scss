@@ -1,0 +1,231 @@
+.content {
+  /*background-color: rgb(216,92,125);*/
+  padding-top: 26px;
+  padding-bottom: 153px;
+  min-height: 1000px;
+}
+.el-icon {
+  display: inline-block;
+  width: 100px;
+}
+.el-text {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  font-family: "TeXGyreAdventor-Regular";
+  color: #fff;
+  font-weight: 100;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+.el-email {
+  display: block;
+  position: relative;
+}
+
+.pl-2r {
+  padding-left: 2rem;
+}
+.pl-21r {
+  padding-left: 2.1rem;
+}
+.pr-16r {
+  padding-right: 1.6rem;
+}
+
+.pl-1r {
+  padding-left: 1rem;
+}
+
+.w-200 {
+  width: 260px;
+}
+.pl-3r {
+  padding-left: 3rem;
+}
+
+.pl-36r {
+  padding-left: 3.6rem;
+}
+
+.pl-4r {
+  padding-left: 4rem;
+}
+.align-left {
+  float: left;
+  padding-left: 2rem;
+}
+
+.align-right {
+  float: right;
+  padding-right: 3rem;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-content: center;
+  text-align: center;
+}
+
+.services-icons {
+  height: 2.8rem;
+}
+
+.padding-service-icons {
+  padding-top: 0.9rem;
+}
+
+.e-link {
+  font-size: 0.8rem;
+  font-family: "TeXGyreAdventor-Regular";
+  color: #fcd2b2;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.ed-icon-main {
+  height: 6rem;
+
+  padding-left: 11.5rem;
+  
+  padding-top: .1rem;
+}
+
+.yhc-icon {
+  padding-top: 1.5rem;
+  height: 4.4rem;
+  text-shadow: #fcd2b2 1px;
+
+  float: left;
+}
+
+.service-icon {
+  height: 3.8rem;
+  text-shadow: #fcd2b2 1px; 
+  padding-left: 1.6rem;
+  padding-top: 0.8rem;
+}
+
+.home-cleaning-icon {
+  height: 4.1rem;
+  text-shadow: #fcd2b2 1px;
+  padding-left: 2.1rem;
+  padding-top: 0.7rem;
+}
+
+.home-removals-icon {
+  height: 3.92rem;
+  text-shadow: #fcd2b2 1px;
+  padding-left: 1.1rem;
+  padding-top: 0.65rem;
+}
+
+.slm-text {
+ padding-left: 0;
+}
+
+.hc-text {
+  padding-left: 1.88rem;
+}
+
+.hr-text {
+  padding-left: 1.46rem;
+}
+
+.ed-padding {
+  padding-top: 0.5rem;
+}
+.yhc-icon-clear {
+  height: 20px;
+  padding-top: 0;
+}
+.services-text-color {
+  margin:0;
+  color: rgb(253, 255, 254);
+  font-size: 0.9rem;
+  font-family: "TeXGyreAdventor-Bold";
+  letter-spacing: 0rem; 
+  height: 17px;
+  text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.31);
+}
+
+.lb {
+  height: 2.4rem;
+  margin-bottom: 0;
+  margin-left: 0.6rem;
+  font-family: "TeXGyreAdventor-Italic";
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.lbs {
+  margin-bottom: 0;
+
+  font-family: "TeXGyreAdventor-BoldItalic";
+  font-size: 2rem;
+  color: #fdd2af;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.align-left-wop {
+  float: left;
+  padding-left: 0rem;
+  letter-spacing: .1rem;
+  padding-top: 0.5rem;
+}
+
+.padding-forms {
+  padding-top: 2.8rem;
+}
+
+.location-icon {
+  height: 26px;
+}
+
+.bubble {
+  background-image: url("/assets/img/LongComment.svg");
+  background-repeat: no-repeat;
+  background-size: 786px 180px;
+  width: 780px;
+  height: 170px;
+  /*margin-top: 20px;*/
+  margin-left: 84px;
+  /*border: 3px solid #fdd2af;*/
+  padding-left: 30px;
+  padding-top: 30px;
+
+  font-weight: 900;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  color: rgb(216, 92, 125);
+  font-family: arial;
+  position: relative;
+  /* -webkit-transform:    skewX(-10deg);
+      transform:    skewX(-10deg);*/
+}
+
+.comment {
+  margin-left: 0;
+  margin-right: 5rem;
+}
+
+
+.ed-logo {
+
+
+}
+
+.ed-logo-icon {
+  height: 36.2rem;
+  position: absolute;
+z-index: 100;
+top: 9.5rem;
+float:left;
+}
+
+.relative {
+  position: relative
+}

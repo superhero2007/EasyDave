@@ -1,0 +1,85 @@
+// Typography
+// --------------------------------------------------
+$font-base: 'CenturyGothic', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-serif: Georgia, 'Times New Roman', Times, serif;
+$font: 'ProximaNova', $font-base;
+
+//$fontLocation = '../../assets/fonts/'
+
+
+$pre: 'bbs-';
+
+// Colors
+// -------------------------
+$light-gray: 	#e9ecef; /////
+$gray: #9fa4aa; /////
+$dark-gray: #495057;
+$tableDarkLighter: #9097a0;
+$mat-card-bg: #d0cac6; 
+$tableRow: #e7e6e3;
+$burgundy: #721c24;
+$light-pink: #f8d7da;
+$darker-pink: #f5c6cb;
+$bError: #f44336;
+$primary-blue: #17a2b8;
+$darker-blue: #17a2b8;
+$light-blue: #80bdff;
+$white: #ffffff;
+
+$links-blue: #007bff;
+$primary-dark: #161d27;
+
+// Font sizes
+// -------------------------
+$font-size-root: 	10px; /////
+$font-size: 		1.4rem; /////
+
+// Line heights
+// -------------------------
+
+$line-height: 1.143; /////
+
+// Font weights
+// -------------------------
+
+$lighter: 300; /////
+$normal: 400; /////
+$medium: 500; /////
+$semibold: 600; //////
+$bold: 700; /////
+$extrabold: 900; /////
+
+$content-width: 140rem; /////
+$content-width-max: 144rem; /////
+$gutter: 1.5rem; /////
+$gutter-md: 2.5rem; /////
+
+//
+// Border radius
+// --------------------------------------------------
+$border-radius: 0.8rem;
+
+// Media filters
+$mxw319 : 'screen and (max-width: 319px)'; // (srv)
+$mxw374 : 'screen and (max-width: 374px)'; // (srv)
+$mxw479 : 'screen and (max-width: 479px)'; // (srv)
+$mxw639 : 'screen and (max-width: 639px)'; // (srv)
+$mxw679 : 'screen and (max-width: 679px)'; // (srv)
+$mxw767 : 'screen and (max-width: 767px)'; // phones
+$mxw869 : 'screen and (max-width: 869px)'; //
+$mxw991 : 'screen and (max-width: 991px)'; // tablets
+$ipad-landscape : 'only screen and (min-device-width: 768px)
+		   and (max-device-width : 1024px)
+		   and (orientation : landscape)'; // ipad landscape
+$ipad-portrait : 'only screen and (min-device-width: 768px)
+		   and (max-device-width : 1024px)
+		   and (orientation : portrait)'; // ipad portrait
+$mxw1023 : 'screen and (max-width: 1023px)'; //
+$mxw1099 : 'screen and (max-width: 1099px)'; //
+$mxw1149 : 'screen and (max-width: 1149px)'; //
+$mxw1199 : 'screen and (max-width: 1199px)'; // medium desktop
+$mnw1200 : 'screen and (min-width: 1200px)'; // large desktop
+$mxw1365 : 'screen and (max-width: 1365px)';
+$mxw1399 : 'screen and (max-width: 1399px)';
+$mxw1599 : 'screen and (max-width: 1599px)'; // extra-large desktop
+

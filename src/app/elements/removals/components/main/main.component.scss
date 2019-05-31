@@ -1,0 +1,527 @@
+.content {
+  background-color: rgb(216, 92, 125);
+  padding-top: 26px;
+  padding-bottom: 153px;
+}
+.el-icon {
+  display: inline-block;
+  width: 100px;
+}
+.el-text {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  font-family: "TeXGyreAdventor-Regular";
+  color: #fff;
+  font-weight: 100;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+.el-email {
+  display: block;
+  position: relative;
+}
+
+.pl-2r {
+  padding-left: 2rem;
+}
+.pr-2r {
+  padding-right: 1.6rem;
+}
+
+.pl-1r {
+  padding-left: 1rem;
+}
+
+.w-200 {
+  width: 260px;
+}
+.pl-3r {
+  padding-left: 3rem;
+}
+
+.pl-36r {
+  padding-left: 3.6rem;
+}
+
+.pl-4r {
+  padding-left: 4rem;
+}
+.align-left {
+  float: left;
+  padding-left: 2rem;
+}
+
+.align-right {
+  float: right;
+  padding-right: 3rem;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-content: center;
+  text-align: center;
+}
+
+.inputField {
+  height: 37px;
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding-left: 18px;
+  padding-top: 10px;
+  padding-bottom: 17px;
+  padding-right: 18px;
+  border: none;
+  width: 30.5rem;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(168, 48, 75, 1);
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+}
+
+.inputFieldExpPanel {
+  height: 37px;
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 30.5rem;
+  text-overflow: clip;
+  padding-bottom: 0.2rem;
+}
+
+.expPanelField input {
+  font-size: 1.2rem;
+  font-family: "TeXGyreAdventor-Regular";
+  border: none;
+  text-align: center;
+  color: rgb(214, 81, 119);
+  padding-left: 1rem;
+
+  box-shadow: 0;
+  margin: 0;
+  width: 25rem;
+}
+
+.expPanelField input ::-webkit-input-placeholder,
+.expPanelField input ::-moz-placeholder,
+.expPanelField input ::-ms-input-placeholder,
+.expPanelField input ::-moz-placeholder {
+  color: rgb(225, 145, 165);
+}
+
+.expPanel {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+
+  border: none;
+  width: 32.67rem;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(168, 48, 75, 1);
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+}
+
+.expPanelField {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+
+  padding-top: 10px;
+  padding-bottom: 17px;
+  padding-right: 18px;
+  border: none;
+  width: 100%;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(254, 255, 255, 1);
+}
+.opened {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  margin-left: -1rem;
+  border: none;
+  width: 33.3rem;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+}
+
+.inputButton {
+  display: inline-block;
+  box-sizing: content-box;
+  padding-left: 1.2rem;
+  letter-spacing: -0.05rem;
+  border: none;
+  width: 8.33rem;
+  border-radius: 6px;
+  text-overflow: clip;
+  background: #a8304b;
+  clear: both;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+  height: 1.4rem;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+  padding-top: 0.27rem;
+  height: 2.5rem;
+  width: 9.2rem;
+}
+.inputField input {
+  font-size: 1.2rem;
+  font-family: "TeXGyreAdventor-Regular";
+  border: none;
+  text-align: center;
+  color: #fcd2b2;
+  padding-left: 1rem;
+  box-shadow: 0;
+  margin: 0;
+  width: 25rem;
+}
+.golden-border {
+  border-bottom: 1px solid #fdd2af;
+  height: 39px;
+  margin-bottom: 0.3rem;
+}
+.inputField input::placeholder {
+  color: #fff;
+}
+.inputButton button {
+  padding-left: 0.36rem;
+  font-size: 1.35rem;
+  font-family: "TeXGyreAdventor-Bold";
+  border: none;
+  color: rgb(255, 255, 255);
+  background: rgba(168, 48, 75, 1);
+  padding: 0;
+  box-shadow: 0;
+  margin: 0;
+  float: center;
+}
+
+.inputButton button::after,
+.inputField input::after {
+  clear: both;
+}
+
+.clear-transformation {
+  -webkit-transform: skewX(10deg);
+  transform: skewX(10deg);
+}
+
+.inputField:focus,
+.inputField input:focus {
+  outline: none;
+}
+
+.services-icons {
+  height: 2.8rem;
+}
+
+.padding-service-icons {
+  padding-top: 0.9rem;
+}
+
+.e-link {
+  font-size: 0.8rem;
+  font-family: "TeXGyreAdventor-Regular";
+  color: #fcd2b2;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.ed-icon-main {
+  height: 5.8rem;
+  padding-left: 2.6rem;
+}
+
+.ed-padding {
+  padding-top: 3rem;
+}
+
+.lb {
+  font-family: "TeXGyreAdventor-Italic";
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.align-left-wop {
+  float: left;
+  padding-left: 1rem;
+  padding-top: 0.1rem;
+}
+
+.padding-forms {
+  padding-top: 0;
+}
+
+.location-icon {
+  height: 24px;
+}
+.arrow-botton {
+  height: 1rem;
+
+  padding-left: 0.2rem;
+
+  padding-bottom: 0.2rem;
+}
+
+.padding {
+  padding-top: 2.8rem;
+  margin-left: 5.9rem;
+}
+
+.form-padding {
+  margin-top: 0.8rem;
+}
+
+.fss-padding {
+  margin-left: 6.2rem;
+  margin-top: 1.2rem;
+}
+
+.fss-button-padding {
+  margin-right: 7.2rem;
+  margin-top: 1rem;
+  float: right;
+}
+
+::ng-deep .mat-horizontal-stepper-header-container {
+  display: none !important;
+}
+.mat-stepper-horizontal,
+.mat-stepper-vertical {
+  background-color: transparent;
+}
+
+.padding2 {
+  padding-top: 1.4rem;
+  margin-left: 6.3rem;
+}
+
+.inputField2 input {
+  font-size: 1.2rem;
+  font-family: "TeXGyreAdventor-Regular";
+  border: none;
+  text-align: center;
+  color: #fcd2b2;
+  background: rgba(168, 48, 75, 0.1);
+  padding-left: 1rem;
+  padding-bottom: 0.8rem;
+  box-shadow: 0;
+  margin: 0;
+}
+
+.inputField2 {
+  height: 60px;
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding-left: 18px;
+  padding-top: 10px;
+  padding-bottom: 17px;
+  padding-right: 18px;
+  border: none;
+  width: 30.5rem;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(168, 48, 75, 1);
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+}
+.golden-border2 {
+  border-bottom: 1px solid #fdd2af;
+  height: 39px;
+  margin-bottom: 0.3rem;
+}
+.inputField2 input::placeholder {
+  color: #fff;
+}
+
+.fss-padding2 {
+  margin-left: 6.1rem;
+  margin-top: 1rem;
+}
+
+.new-button {
+  height: 2.2rem;
+  padding-bottom: 0.2rem;
+  padding-right: 1rem;
+}
+
+.inputButtonNext {
+  display: inline-block;
+  box-sizing: content-box;
+  padding-left: 1.2rem;
+  letter-spacing: -0.05rem;
+  border: none;
+  width: 5.5rem;
+  border-radius: 6px;
+  text-overflow: clip;
+  background: #a8304b;
+  clear: both;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+  height: 1.4rem;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+  padding-top: 0.27rem;
+  height: 2.5rem;
+  text-align: left;
+  margin-right: 5.2rem;
+}
+
+.inputButtonBack {
+  text-align: left;
+  display: inline-block;
+  box-sizing: content-box;
+  padding-left: 1.2rem;
+  letter-spacing: -0.05rem;
+  border: none;
+  width: 5.5rem;
+  border-radius: 6px;
+  text-overflow: clip;
+  background: #a8304b;
+  clear: both;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+  height: 1.4rem;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+  padding-top: 0.27rem;
+  height: 2.5rem;
+  margin-right: 0.9rem;
+}
+
+.inputButtonNew {
+  text-align: center;
+  display: inline-block;
+  box-sizing: content-box;
+  padding-left: 1.2rem;
+  letter-spacing: -0.05rem;
+  border: none;
+  width: 3.3rem;
+  border-radius: 6px;
+  text-overflow: clip;
+  background: #a8304b;
+  clear: both;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+  height: 1.4rem;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+  padding-top: 0.27rem;
+  height: 2.5rem;
+  margin-right: 0.9rem;
+}
+
+.back-button-padding {
+  margin-top: 1rem;
+}
+
+.new-button-padding {
+  margin-top: 1rem;
+}
+
+.next-button-padding {
+  margin-top: 1rem;
+}
+.buttons2 {
+  width: 100%;
+  float: right;
+  text-align: right;
+  margin-right: 2.2rem;
+}
+
+.inputButtonBack button,
+.inputButtonNext button,
+.inputButtonNew button {
+  padding-left: 0.36rem;
+  font-size: 1.25rem;
+  font-family: "TeXGyreAdventor-Bold";
+  border: none;
+  color: rgb(255, 255, 255);
+  background: rgba(168, 48, 75, 1);
+  padding: 0;
+  box-shadow: 0;
+  margin: 0;
+  float: center;
+}
+
+.inputButtonBack button::after,
+.inputButtonNext button::after {
+  clear: both;
+}
+
+:host /deep/ .invisible-tabs {
+  .mat-tab-header {
+    display: none !important;
+  }
+}
+
+.disable_ripple:hover {
+  background: rgba(168, 48, 75, 1) !important;
+}
+
+::ng-deep mat-expansion-panel-header:hover {
+  background: rgba(168, 48, 75, 1) !important;
+}
+::ng-deep mat-expansion-panel-header {
+  height: 60px !important;
+}
+
+.padding-panel {
+  margin-left: 7.2rem;
+}
+
+:host /deep/ .mat-expansion-panel-body {
+  padding: 0 !important;
+}
+
+::ng-deep .mat-expansion-panel-body {
+  padding: 0;
+}
+
+.map {
+  overflow: hidden;
+  
+}

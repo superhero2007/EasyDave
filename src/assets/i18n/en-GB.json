@@ -1,0 +1,159 @@
+{
+  "sideNav": {
+    "sms": "SMS",
+    "users": "Users management",
+    "system": "System management",
+    "stopList": "Stop list",
+    "rules": "Rules",
+    "testAml": "Test AML",
+    "dashboard": "Dashboard",
+    "userManagement": "Users management"
+  },
+  "login": {
+    "login": "Login",
+    "errors": {
+      "usernameRequired": "Enter username",
+      "passwordRequired": "Enter password",
+      "wrongCreds": "Username or password is invalid"
+    },
+    "success": "Logged in successfully",
+    "username": "username",
+    "selectCompany ": "Select company",
+    "password": "password"
+  },
+  "modals": {
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "successMessages": {
+    "users": {
+      "created": "User created",
+      "deleted": "User deleted",
+      "updated": "User updated"
+    }
+  },
+  "errorMessages": {
+    "error": "Error occurred"
+  },
+  "tables": {
+    "search": "Search",
+    "noRecords": "No matching records found",
+    "actions": "Actions"
+  },
+  "labels": {
+    "isActual": "Is actual",
+    "search": "Search",
+    "name": "Name",
+    "dateTill": "Date till",
+    "dateFrom": "Date from",
+    "payerReason": "Payer profile",
+    "payeeReason": "Payee profile",
+    "payerRelationReason": "Payer rel. profile",
+    "payeeRelationReason": "Payee rel. profile",
+    "fromIBAN": "Payer IBAN",
+    "toIBAN": "Payee IBAN",
+    "payerCountryCode": "Country code",
+    "payeeCountryCode": "Country code",
+    "payerCurrency": "Currency",
+    "action": "Permit Transaction",
+    "amount": "Amount",
+    "words": "Purpose words",
+    "payerAmount": "Amount",
+    "payerName": "Payer name",
+    "payeeName": "Payee name",
+    "payerAccountIBAN": "Payer IBAN",
+    "payeeAccountIBAN": "Payee IBAN",
+    "payeeCurrency": "Payee currency",
+    "purpose": "Purpose",
+    "firstName": "First name",
+    "middleName": "Middle name",
+    "lastName": "Last name",
+    "email": "E-mail",
+    "password": "Password",
+    "selectCompany":"Select company",
+    "if":"IF",
+    "and":"AND",
+    "machAtLeastOneOf":"MACHES AT LEAST ONE OF WORDS IN:",
+    "then": "THEN",
+    "deny":"DENY transaction",
+    "allow":"DENY transaction",
+    "inactive":"INACTIVE",
+    "active":"ACTIVE",
+    "is":"is",
+    "rule":"Rule",
+    "edit":"Edit",
+    "profile":"profile"
+  },
+  "error": {
+    "loginError": "Failed to login"
+  },
+  "buttons": {
+    "apply": "Apply",
+    "create": "Create",
+    "cancel": "Cancel",
+    "testTrx": "Test transaction",
+    "save": "Save",
+    "addNewCompany": "Assign company",
+    "disable":"Disable",
+    "enable":"Enable",
+    "setPassword":"Set password",
+    "add":"Assign"
+  },
+  "aml": {
+    "rules": {
+      "text": {
+        "cTime": "Created at",
+        "payerCountryCode": "Country code",
+        "payeeCountryCode": "Country code",
+        "createdByFullName": "Created by",
+        "mTime": "Modified at",
+        "modifiedByFullName": "Modified by",
+        "dateFrom": "Valid from",
+        "dateTill": "Valid to",
+        "fromIBAN": "Payer IBAN",
+        "toIBAN": "Payee IBAN",
+        "isActual": "Is actual",
+        "name": "Name",
+        "words": "Purpose words",
+        "payerReason": "Payer profile",
+        "payeeReason": "Payee profile",
+        "payerRelationReason": "Payer rel. profile",
+        "payeeRelationReason": "Payee rel. profile",
+        "actions": "Actions",
+        "action": "Permit",
+        "amount": "Amount"
+      },
+      "create": "Create AML rule",
+      "edit": "Save AML rule"
+    }
+  },
+  "main": {
+    "dashboard": "Dashboard",
+    "rules": "AML rules",
+    "stopList": "Stop list",
+    "testTrx": "Test Transaction",
+    "userManagement": "Users management"
+  },
+  "testAML": {
+    "form": {
+      "ibanInvalid": "Invalid IBAN",
+      "nameInvalid": "Must be at least two words"
+    },
+    "checkAml": "Test transaction"
+  },
+  "usersManagement": {
+    "createUser": "Create user",
+    "text": {
+      "fullName": "Full name",
+      "middleName": "Middle name",
+      "lastName": "Last name",
+      "email": "E-mail",
+      "cTime": "Created time",
+      "mTime": "Modified time",
+      "roles": "Roles",
+      "status": "Status",
+      "actions": "Actions"
+    }
+  }
+}

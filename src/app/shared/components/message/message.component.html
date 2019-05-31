@@ -1,0 +1,26 @@
+<div
+  *ngIf="mod === 'full-screen'"
+  class="bbs-message__overlay"></div>
+<div class="bbs-message bbs-message--{{ type }} bbs-message--has-icon bbs-message--has-icon-left bbs-message--{{ mod }}">
+  <div
+    class="bbs-message__icon bbs-message__icon--left">
+    <mat-icon>warning</mat-icon>
+  </div>
+  <div
+    class="bbs-message__text" [innerHTML]="text">
+  </div>
+  <div class="bbs-message__action-list"
+       *ngIf="params && params.actionList && !(loading$ | async)">
+    <button
+      class="bbs-button bbs-button--primary bbs-button--sm"
+      *ngFor="let action of params.actionList"
+      (click)="paramsAction(action['actionName'])">
+			<span class="bbs-button__text">
+				{{ action['actionText'] }}
+			</span>
+    </button>
+  </div>
+  <div class="bbs-message__loading">
+    <div class="bbs-spinner"></div>
+  </div>
+</div>

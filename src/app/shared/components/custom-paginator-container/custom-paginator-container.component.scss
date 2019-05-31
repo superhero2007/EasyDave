@@ -1,0 +1,50 @@
+@import "../../../../assets/themes/base/styles/common/helpers";
+
+.#{$pre}paginator-container {
+  background-color: rgb(208,202,198) !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .#{$pre}page-numbers-container {
+    margin-left: 5px;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    /*&.one-page {
+      p {
+        display: none;
+        &:first-child {
+          display: block;
+        }
+      }
+    }*/
+    .#{$pre}page-number {
+      background-color: rgb(208,202,198) !important;
+      width: 5vw;
+      cursor: pointer;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 400;
+      color: #848990ad;
+      &.current {
+        color: $primary-dark;
+      }
+      &:hover {
+        text-decoration: underline $primary-dark ;
+      }
+      @media #{$mxw869} {
+        width: 9vw;
+      }
+    }
+  }
+}
+.mat-paginator-container {
+  background-color: rgb(208,202,198) !important;
+
+}
+.mat-paginator {
+  background-color: rgb(208,202,198) !important;
+}

@@ -1,0 +1,115 @@
+/*
+!*Typography
+**************************************************************************************************!
+*/
+
+
+b,
+strong {
+    font-family: $font;
+    font-weight: $bold;
+}
+
+em {
+    font-weight: inherit;
+    font-style: italic;
+}
+
+a {
+    color: inherit;
+    @include transition;
+    text-decoration: none;
+    &:hover {
+        @include transition;
+        text-decoration: underline;
+    }
+    &:focus {
+        @include transition;
+    }
+}
+
+p {
+    margin: 0;
+}
+
+/*!* Titles *!*/
+
+h1,
+.h1 {
+    margin: 0 0 2.5rem;
+    font-family: $font;
+    font-size: 4.2rem;
+    line-height: 1.16667;
+    font-weight: $lighter;
+    letter-spacing: -0.17rem;
+}
+h2,
+.h2 {
+    margin: 0 0 2.5rem;
+    font-family: $font;
+    font-size: 2.8rem;
+    line-height: 1.125;
+    font-weight: $lighter;
+    letter-spacing: 0.11rem;
+}
+h3,
+.h3 {
+    margin: 0 0 2.5rem;
+    font-family: $font;
+    font-size: 2rem;
+    line-height: 1.1667;
+    font-weight: $lighter;
+    letter-spacing: 0.08rem;
+}
+h4,
+.h4 {
+    margin: 0 0 2rem;
+    font-family: $font;
+    font-size: 1.6rem;
+    line-height: 1.2143;
+    font-weight: $lighter;
+    letter-spacing: -0.06rem;
+}
+
+h5,
+.h5 {
+    margin: 0 0 2rem;
+    font-family: $font;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: $lighter;
+    letter-spacing: -0.04rem;
+}
+h6,
+.h6 {
+    margin: 0 0 1.6rem;
+    font-family: $font;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    font-weight: $lighter;
+    letter-spacing: -0.03rem;
+}
+
+/*!* Text *!*/
+
+.font-lighter {
+    font-weight: $lighter;
+}
+.font-normal {
+    font-weight: $normal;
+}
+.font-medium {
+    font-weight: $medium;
+}
+.font-semibold {
+    font-weight: $semibold;
+}
+.font-bold {
+    font-weight: $bold;
+}
+.font-extrabold {
+    font-weight: $extrabold;
+}
+.font-dark {
+    color: #000000 !important;
+}

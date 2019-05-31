@@ -1,0 +1,620 @@
+// Helpers
+@import "../assets/themes/base/styles/common/helpers";
+
+.app-container-inner {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .nav-button {
+    margin-left: auto;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.is-mobile .toolbar {
+  position: fixed;
+  z-index: 2;
+}
+
+h1.example-app-name {
+  margin-left: 8px;
+}
+
+.example-sidenav-container {
+  flex: 1;
+}
+
+.example-is-mobile .example-sidenav-container {
+  flex: 1 0 auto;
+}
+
+.sidenav-container {
+  height: 100%;
+  .hidden {
+    display: none;
+  }
+  .mat-list-item {
+    margin-bottom: 5px;
+  }
+}
+
+:host /deep/ mat-sidenav-container {
+  overflow: auto;
+}
+
+:host /deep/ .mat-sidenav-fixed {
+  position: absolute !important;
+}
+
+:host /deep/ mat-sidenav-content {
+  overflow: hidden !important;
+  background-color: rgb(218, 215, 211) !important;
+}
+
+:host /deep/ mat-toolbar {
+  height: fit-content !important;
+  //min-height: 60px !important;
+  min-height: fit-content !important;
+  background-color: rgb(218, 215, 211) !important;
+  color: $primary-dark !important;
+  display: flex;
+  justify-content: flex-end;
+  .mat-icon {
+    font-size: 35px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+}
+
+.mat-drawer-side {
+  border: 0;
+  display: flex;
+  align-items: center;
+  background-color: rgb(231, 230, 227) !important;
+  border-right-color: #e6e6e6 solid 2px;
+}
+
+:host /deep/ mat-sidenav {
+  .mat-drawer-inner-container {
+    height: 75%;
+    width: 60px;
+    overflow: hidden;
+    margin-left: 10px;
+    color: $primary-dark !important;
+
+    display: flex;
+    align-items: center;
+  }
+}
+
+:host /deep/ mat-nav-list {
+  .mat-list-item {
+    color: $primary-dark;
+    &-content {
+      color: $primary-dark;
+    }
+  }
+}
+
+.app-container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  overflow: auto;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+
+  height: 100%;
+  width: 100%;
+  overflow-x: scroll;
+
+  .home-container {
+    position: relative;
+    z-index: 90;
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+
+    -webkit-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+
+    height: calc(100% - 44px);
+
+    &.hidden {
+      display: none !important;
+    }
+  }
+
+  form {
+    /*:host /deep/ & .form-label-container {
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+    }*/
+
+    display: block;
+    width: 100%;
+    :host /deep/ & .mat-form-field {
+      display: block;
+      width: 100%;
+      font-size: 1rem;
+      //text-align: center;
+      font-family: $font;
+      //height: 60px;
+    }
+    :host /deep/ & .mat-form-field-wrapper {
+      padding-bottom: 1.2rem;
+    }
+    :host /deep/ & .mat-form-field-infix {
+      width: 100%;
+      border-top: 0;
+    }
+    :host /deep/ & .mat-form-field-appearance-legacy .mat-form-field-infix {
+      padding: 0;
+    }
+    :host /deep/ & .mat-form-field-appearance-legacy .mat-form-field-underline {
+      bottom: 3.2rem;
+    }
+    :host /deep/ & .mat-input-element {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.2;
+      font-family: $font;
+      font-weight: $normal;
+      text-align: center;
+      letter-spacing: -0.04rem;
+    }
+    /*:host /deep/ & .mat-form-field-appearance-legacy .mat-form-field-label {
+      top: 2.5rem;
+      font-size: 1rem;
+      line-height: 1.2;
+      font-family: $font;
+      font-weight: $normal;
+      text-align: center;
+      letter-spacing: -0.04rem;
+    }*/
+
+    /*:host /deep/ & .mat-form-field-label-wrapper {
+      top: -1rem;
+      padding-top: 1rem;
+    }*/
+    /*:host /deep/ & .mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+      -webkit-transform: translateY(-2rem) scale(.75) perspective(100px) translateZ(.001px);
+      transform: translateY(-2rem) scale(.75) perspective(100px) translateZ(.001px);
+      -ms-transform: translateY(-2rem) scale(.75);
+      width: 133.33333%;
+    }
+    :host /deep/ & .mat-form-field-appearance-legacy .mat-form-field-subscript-wrapper {
+      top: calc(100% - 4.2rem);
+      margin-top: 0;
+      font-size: 1.2rem;
+      line-height: 1.1667;
+      text-align: center;
+    }*/
+
+    :host /deep/ & .mat-error {
+      height: 50px;
+      font-size: 20px;
+      margin: 10px auto 0;
+      padding: 0.5rem 1.25rem;
+    }
+
+    .login-input-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-bottom: 1rem;
+      height: fit-content;
+    }
+  }
+}
+
+:host /deep/ {
+  bbs-login,
+  bbs-stop-list-container,
+  bbs-rules-container,
+  bbs-test-aml-container,
+  bbs-user-management-container,
+  bbs-add-user-modal,
+  bbs-dashboard-container,
+  bbs-user-set-password-modal,
+  bbs-auth-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+:host /deep/ {
+  app-base {
+    overflow-x: auto;
+  }
+}
+
+:host /deep/ app-sms-header {
+  width: 100%;
+  bottom: -7px;
+  position: relative;
+}
+
+:host /deep/ app-system-header {
+  width: 100%;
+  bottom: -7px;
+  position: relative;
+}
+
+:host /deep/ mat-nav-list {
+  .mat-list-item {
+    &.current,
+    &:hover {
+      text-decoration: none;
+      cursor: pointer;
+      background-color: rgb(202, 187, 117);
+      border-radius: 3px;
+      @include transition;
+      .mat-icon {
+        color: #000000;
+        @include transition;
+      }
+    }
+    &.disabled {
+      pointer-events: none !important;
+      cursor: default !important;
+    }
+  }
+}
+
+header {
+  background-color:rgb(159,36,75	);
+  height: 32px;
+}
+
+header table,
+footer table {
+  width: 100%;
+  padding: 0;
+  border-spacing: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+.header-location-icon {
+  height: 0.88rem;
+  padding-left: 0rem;
+  height: 14px;
+  vertical-align: middle;
+}
+
+.header-location-text {
+  padding-top: 0rem;
+  padding-left: 0.219rem;
+  letter-spacing: 0.0171rem;
+  color: #f7ecef;
+  font-size: 0.88rem;
+  font-family: "TeXGyreAdventor-Regular";
+}
+
+.header-location-icon-phone {
+  height: 0.88rem;
+  padding-left: 0rem;
+  height: 14px;
+  vertical-align: middle;
+}
+
+.header-location-text-phone {
+  padding-top: 0rem;
+  padding-left: 0.219rem;
+  letter-spacing: 0.0171rem;
+  color: #f7ecef;
+  font-size: 0.88rem;
+  font-family: "TeXGyreAdventor-Regular";
+}
+
+.header-location-icon-email {
+  height: 0.88rem;
+  padding-left: 0rem;
+  height: 17px;
+  vertical-align: middle;
+}
+
+.header-location-text-email {
+  padding-top: 0rem;
+  padding-left: 0.219rem;
+  letter-spacing: 0.0171rem;
+  color: #f7ecef;
+  font-size: 0.88rem;
+  font-family: "TeXGyreAdventor-Regular";
+}
+
+.header-align {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+.header-align-left {
+  width: 360px;
+  float: left;
+  display: flex;
+  height: 20px;
+}
+
+.header-table-td-left {
+  text-align: left;
+}
+
+.header-table-td-right {
+  text-align: right;
+}
+
+.header-align {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+.header-align-left {
+  width: 360px;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.innerpage {
+  min-height: 808px;
+  background-color: rgb(206,82,122);
+}
+
+//footer {
+//  min-height: 253px !important;
+//  background-color: rgb(159,36,75)	;
+//}
+
+footer {
+  min-height: 233px !important;
+  background-color: rgb(159,36,75)	;
+}
+
+.footer-services-text {
+  color: #fcd2b2;
+  font-size: 0.93rem;
+  padding-top: 0.4rem;
+  letter-spacing: 0.001rem;
+  font-family: "TeXGyreAdventor-Bold";
+}
+.footer-services-link {
+  color: #f7ecef;
+  font-size: 0.93rem;
+  padding-top: 0.4rem;
+  font-family: "TeXGyreAdventor-Bold";
+  cursor: pointer;
+}
+
+.footer-services-link :a.hover {
+}
+.services-padding {
+  padding-top: 1rem;
+  padding-left: 1.2rem;
+  width: 8.125rem;
+}
+
+.services-links-padding {
+  padding-top: 1rem;
+  padding-left: 0.4rem;
+  width: 33rem;
+}
+
+.first-link-padding {
+  padding-left: 0.2rem;
+  padding-top: 1rem;
+}
+
+.trustpilot {
+  padding-left: 1rem;
+  width: 17rem;
+}
+.trustpilot-icon {
+  height: 2.5rem;
+  margin-top: 0.6rem;
+  margin-left: 0.2rem;
+}
+
+.width1 {
+  vertical-align: top;
+  width: 8.125rem;
+}
+
+.width2 {
+  vertical-align: top;
+  width: 35rem;
+}
+
+.width3 {
+  vertical-align: top;
+  width: 17rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.services-area-padding {
+  padding-left: 0rem;
+  padding-top: 0.56rem;
+  line-height: 1.2rem;
+}
+
+.services-area-text-padding {
+  padding-top: 0.61rem;
+  padding-left: 0.4rem;
+  width: 31rem;
+  line-height: 1.13rem;
+}
+
+.area {
+  color: #f7ecef;
+  font-size: 0.905rem;
+  font-family: "TeXGyreAdventor-Regular";
+}
+
+.table-td-center {
+  text-align: center;
+  vertical-align: top;
+}
+
+.table-td-center {
+  text-align: center;
+  vertical-align: top;
+}
+
+.footer-social-icons {
+  padding-top: 0rem;
+  width: 2.76rem;
+}
+
+a div.footer-social-icons svg:hover #facebook {
+  fill: #ff0;
+}
+.footer-align {
+  display: block;
+  padding-top: 0.45rem;
+  float: right;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.footer-align-center {
+  float: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  width: 220px;
+  padding-top: 0.8rem;
+  padding-left: 0.5rem;
+  padding-bottom: 0.3rem;
+}
+
+.footer-td-logo {
+  vertical-align: top;
+  width: 9.21rem;
+  padding-top: 1.2rem;
+}
+
+.separator-slash-gold {
+  color: #fcd2b2;
+  font-size: 0.78rem;
+}
+
+.footer-ed-text {
+  vertical-align: top;
+  color: #f7ecef;
+  font-size: 0.79rem;
+  font-family: "TeXGyreAdventor-Regular";
+  padding-left: 0.4rem;
+  letter-spacing: 0.071rem;
+  line-height: 1.2rem;
+  padding-top: 1.39rem;
+}
+
+.footer-align {
+  display: block;
+  padding-top: 0.45rem;
+  float: right;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.footer-link {
+  font-family: "TeXGyreAdventor-Bold";
+  color: #fcd2b2;
+  font-size: 0.878rem;
+  margin-right: 0.78rem;
+}
+
+.footer-link a:hover {
+  color: #f7ecef;
+}
+.footer-links {
+  padding-top: 0.6rem;
+}
+
+.width-links {
+  width: 25rem;
+}
+
+.width-love {
+  width: 15rem;
+}
+
+.footer-love-logo {
+  height: 1.9rem;
+  margin-top: 0.73rem;
+  padding-left: 0.3rem;
+}
+
+.footer-copy-block {
+  padding-top: 0.6rem;
+  padding-left: 0.29rem;
+}
+
+.footer-copy {
+  font-family: "TeXGyreAdventor-Bold";
+  color: #fcd2b2;
+  font-size: 0.89rem;
+  margin-right: 0.78rem;
+}
+
+.footer-bottom {
+  margin-top: 0.9rem;
+}
+
+.becomeapro {
+  margin-top:0.5rem;
+  font-family: "TeXGyreAdventor-Bold";
+  color: #fff;
+  font-size: 0.9rem;
+  margin-left: 2.5rem;
+}

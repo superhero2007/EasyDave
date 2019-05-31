@@ -1,0 +1,159 @@
+{
+    "sideNav": {
+      "sms": "SMS",
+      "users": "Vartotojų valdymas",
+      "system": "Systemos valdymas",
+      "stopList": "Stop list",
+      "rules": "Taisyklės",
+      "testAml": "Testuoti Transakciją",
+      "dashboard": "Darbalaukis",
+      "userManagement": "Vartotojų valdymas"
+    },
+    "login": {
+      "login": "Prisijungti",
+      "errors": {
+        "usernameRequired": "Įveskite vartotojo vardą",
+        "passwordRequired": "Įveskite sląptažodį",
+        "wrongCreds": "Vartojo vardas arba spląptažodis neteisingi"
+      },
+      "success": "Sekingai prisijungta",
+      "username": "Vartotojo vardas",
+      "selectCompany ": "Pasirinkite kompaniją",
+      "password": "Slaptažodis"
+    },
+    "modals": {
+      "close": "Uždaryti",
+      "yes": "Taip",
+      "no": "Ne"
+    },
+    "successMessages": {
+      "users": {
+        "created": "Vartotojas sukurtas",
+        "deleted": "Vartotojas ištrintas",
+        "updated": "Vartotojas atnaujintas"
+      }
+    },
+    "errorMessages": {
+      "error": "Įvyko klaida"
+    },
+    "tables": {
+      "search": "Ieškoti",
+      "noRecords": "Įrašų nerasta",
+      "actions": "Veiksmai"
+    },
+    "labels": {
+      "isActual": "Aktyvus",
+      "search": "Paieška",
+      "name": "Pavadinimas",
+      "dateTill": "Aktyvus nuo",
+      "dateFrom": "Aktyvus iki",
+      "payerReason": "Mokėtojo profilis",
+      "payeeReason": "Gavėjo profilis",
+      "payerRelationReason": "Moketojo ryš. profilis",
+      "payeeRelationReason": "Gavėjo ryš. profilis",
+      "fromIBAN": "Mokėtojo IBAN",
+      "toIBAN": "Gavėjo IBAN",
+      "payerCountryCode": "Mokėtojo valstybė",
+      "payeeCountryCode": "Gavėjo valstybė",
+      "payerCurrency": "Valiuta",
+      "action": "Leisti",
+      "amount": "Suma",
+      "words": "Paskirtis",
+      "payerAmount": "Suma",
+      "payerName": "Mokėtojas",
+      "payeeName": "Gavėjas",
+      "payerAccountIBAN": "Mokėtojo IBAN",
+      "payeeAccountIBAN": "Gavėjo IBAN",
+      "payeeCurrency": "Valiuta",
+      "purpose": "Paskirtis",
+      "firstName": "Vardas",
+      "middleName": "Vid. vardas",
+      "lastName": "Pavardė",
+      "email": "El. paštas",
+      "password": "Slaptažodis",
+      "selectCompany":"Pasirinkite kompaniją",
+      "if":"JEIGU",
+      "and":"IR",
+      "machAtLeastOneOf":"SUTAMPA SU BET VIENU ŽODŽIU IŠ: ",
+      "then": "TADA",
+      "deny":"STABDYTI operaciją",
+      "allow":"LEISTI operaciją",
+      "inactive":"NEAKTYVI",
+      "active":"AKTYVI",
+      "is":"yra",
+      "rule":"Taisyklė",
+      "edit":"Redaguoti",
+      "profile":"profilį"
+    },
+    "error": {
+      "loginError": "Nepavyko prisijungti"
+    },
+    "buttons": {
+      "apply": "Patvirtinti",
+      "create": "Sukurti",
+      "cancel": "Atšaukti",
+      "testTrx": "Testuoti tranzakciją",
+      "save": "Išsaugoti",
+      "addNewCompany": "Priskirti kompaniją",
+      "disable":"Blokuoti",
+      "enable":"Aktyvuoti",
+      "setPassword":"Keisti slaptažodį",
+      "add":"Priskirti"
+    },
+    "aml": {
+      "rules": {
+        "text": {
+          "cTime": "Sukurta",
+          "payerCountryCode": "Moketojo valstybė",
+          "payeeCountryCode": "Gavėjo valstybė",
+          "createdByFullName": "Sukurta",
+          "mTime": "Redaguota",
+          "modifiedByFullName": "Redaguota",
+          "dateFrom": "Galioja nuo",
+          "dateTill": "Galioja iki",
+          "fromIBAN": "Mokėtojo IBAN",
+          "toIBAN": "Gavėjo IBAN",
+          "isActual": "Aktyvus",
+          "name": "Pavadinimas",
+          "words": "Paskirtis",
+          "payerReason": "Mokėtojo profilis",
+          "payeeReason": "Gavėjo profilis",
+          "payerRelationReason": "Mokėtojo ryš. profilis",
+          "payeeRelationReason": "Gavėjo ryš. profilis",
+          "actions": "Veiksmai",
+          "action": "Leisti",
+          "amount": "Suma"
+        },
+        "create": "Kurti AML taisyklę",
+        "edit": "Išsaugoti AML taisyklę"
+      }
+    },
+    "main": {
+      "dashboard": "Darbalaukis",
+      "rules": "AML taisyklės",
+      "stopList": "Stop list",
+      "testTrx": "Testuoti tranzakcija",
+      "userManagement": "Vartotojų valdymas"
+    },
+    "testAML": {
+      "form": {
+        "ibanInvalid": "Blogas IBAN",
+        "nameInvalid": "Reikalinga ivesti min du žodžius"
+      },
+      "checkAml": "Testuoti tranzakcija"
+    },
+    "usersManagement": {
+      "createUser": "Kurti vartotoją",
+      "text": {
+        "fullName": "Pilnas vardas",
+        "middleName": "Vidurinis vardas",
+        "lastName": "Pavarde",
+        "email": "El. paštas",
+        "cTime": "Sukurta",
+        "mTime": "Redaguota",
+        "roles": "Rolės",
+        "status": "Statusas",
+        "actions": "Veiksmai"
+      }
+    }
+  }

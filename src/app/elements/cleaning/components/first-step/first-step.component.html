@@ -1,0 +1,63 @@
+<div class="container-fluid ">
+  <div class="row">
+    <div class="col"></div>
+    <div class="col fixed-content no-gutters">
+      <div class="row no-gutters padding-forms">
+        <div class="col-2">
+          &nbsp;
+        </div>
+        <div class="col-7">
+          <div class="form-padding">
+            <form id="search-form" (ngSubmit)="onSubmit()" accept-charset="UTF-8" method="get">
+
+              <div class="" style="padding-left:1rem;">
+                <div class="inputField">
+                  <div class="golden-border">
+                    <div class="clear-transformation">
+                      <label class="">
+                        <span matPrefix><img class="location-icon" height="26px" src="/assets/img/Location.svg">
+                          &nbsp;</span>
+                        <!--<app-google-places (setAddress)="getAddress($event)" adressType="geocode"></app-google-places>-->
+                        <span matSuffix><img class="location-icon" height="26px"
+                            src="/assets/img/ConfirmInCircleGold.svg"> &nbsp;</span>
+                      </label>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fss-padding">
+                <div class="inputField">
+                  <div class="golden-border">
+                    <div class="clear-transformation">
+                      <label class="">
+                        <span matPrefix><img class="location-icon" height="26px" src="/assets/img/EmailAddressGold.svg">
+                          &nbsp;</span>
+                        <input type="text" matInput placeholder="Enter your email address" />
+                        <span matSuffix><img class="location-icon" height="26px"
+                            src="/assets/img/ConfirmInCircleGold.svg"> &nbsp;</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="inputButton fss-button-padding">
+                  <div class="clear-transformation">
+                    <button type="submit" (click)=nextStep()>Get Started <img class="arrow-botton"
+                        src="/assets/img/ArrowToRight.svg"> </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-3">
+          &nbsp;
+        </div>
+      </div>
+      <br>
+    </div>
+    <div class="col"></div>
+  </div>

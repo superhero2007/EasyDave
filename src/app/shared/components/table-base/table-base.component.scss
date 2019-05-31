@@ -1,0 +1,21 @@
+.empty-message {
+  border-bottom-right-radius: 3px;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-top: 0;
+  border-bottom-left-radius: 3px;
+  font-size: 1rem;
+  font-weight: bolder;
+  &:hover {
+    background-color: rgba(0, 0, 0, .075);
+  }
+}
+
+:host /deep/ .mat-dialog-container {
+  height: 80vh !important;
+}
+
+.table-container-message {
+  width: 25%;
+}

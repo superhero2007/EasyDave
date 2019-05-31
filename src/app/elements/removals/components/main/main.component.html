@@ -1,0 +1,225 @@
+<mat-tab-group class="invisible-tabs" [(selectedIndex)]="selectedIndex" (selectedTabChange)="tabChanged($event)">
+  <mat-tab>
+    <div class="container-fluid ">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col fixed-content no-gutters">
+          <div class="row no-gutters padding-forms">
+            <div class="col-2">
+              &nbsp;
+            </div>
+            <div class="col-9">
+              <div class="form-padding">
+                <form>
+
+                  <div class="padding-panel">
+
+                    <div [@openClose]="isOpenAddress ? 'open' : 'closed'" class="inputField">
+
+                      <div class="golden-border"  *ngIf="!isOpenAddress">
+                        <div class="clear-transformation">
+                          <label class="" >
+                            <span matPrefix><img class="location-icon" height="26px" src="/assets/img/Location.svg">
+                              &nbsp;</span>
+                            <input [(ngModel)]="address" name="address" value="{{from + ' > ' + to}}" (click)="toggleAddress()" />
+                            <span matSuffix><img class="location-icon" height="26px"
+                                src="/assets/img/ConfirmInCircleGold.svg"> &nbsp;</span>
+                          </label>
+
+                        </div>
+
+                      </div>
+                      <div class="" *ngIf="isOpenAddress">
+                        <div class="expPanelField">
+                          <div class="golden-border">
+                            <div class="clear-transformation">
+                              <label class="">
+                                <span matPrefix><img class="location-icon" height="26px"
+                                    src="/assets/svg/A point (red+pink).svg">
+                                  &nbsp;</span>
+                                <input type="text" matInput placeholder="Enter from address" [(ngModel)]="from" name="from" required />
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="" *ngIf="isOpenAddress">
+                        <div class="expPanelField">
+                          <div class="golden-border">
+                            <div class="clear-transformation">
+                              <label class="">
+                                <span matPrefix><img class="location-icon" height="26px"
+                                    src="/assets/svg/B point (red+pink).svg">
+                                  &nbsp;</span>
+                                <input type="text" matInput placeholder="Enter from address" [(ngModel)]="to" name="to" required />
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div  #gmap class="map clear-transformation"
+                        style="left:-50px;width:40rem;height:400px"></div>
+                    </div>
+
+
+                  </div>
+
+
+
+
+
+
+                  <div class="fss-padding">
+                    <div class="inputField">
+                      <div class="golden-border">
+                        <div class="clear-transformation">
+                          <label class="">
+                            <span matPrefix><img class="location-icon" height="26px"
+                                src="/assets/img/EmailAddressGold.svg">
+                              &nbsp;</span>
+                            <input type="text" matInput placeholder="Enter your email address" name="email" required />
+                            <span matSuffix><img class="location-icon" height="26px"
+                                src="/assets/img/ConfirmInCircleGold.svg"> &nbsp;</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="inputButton fss-button-padding">
+                      <div class="clear-transformation">
+                        <button type="submit" (click)="nextStep()">Get Started <img class="arrow-botton"
+                            src="/assets/img/ArrowToRight.svg"> </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-1">
+              &nbsp;
+            </div>
+          </div>
+          <br>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+
+  </mat-tab>
+  <mat-tab>
+    <div class="container-fluid ">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col fixed-content no-gutters">
+          <div class="row no-gutters padding-forms">
+            <div class="col-2">
+              &nbsp;
+            </div>
+            <div class="col-9">
+              <div class="form-padding">
+                <form [formGroup]="secondFormGroup">
+                  <div class="padding2" style="padding-left:1rem;">
+                    <div class="inputField2">
+                      <div class="golden-border2">
+                        <div class="clear-transformation">
+                          <div>
+                            <img class="location-icon" height="26px" src="/assets/svg/Bedroom icon (gold).svg">
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="fss-padding2">
+                    <div class="inputField2">
+                      <div class="golden-border-bottom">
+                        <div class="clear-transformation">
+                          <label class="">
+                            <span matPrefix><img class="location-icon" height="26px"
+                                src="/assets/img/EmailAddressGold.svg">
+                              &nbsp;</span>
+
+                            <input type="text" matInput placeholder="Enter your email address"
+                              (click)="mapToggle(false)" />
+                            <span matSuffix><img class="location-icon" height="26px"
+                                src="/assets/img/ConfirmInCircleGold.svg">
+                              &nbsp;</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+
+                    <div class="buttons2">
+                      <div class="inputButtonNew new-button-padding">
+                        <div class="clear-transformation">
+                          <button type="submit" (click)=onSubmitFw()> <img class="new-button"
+                              src="/assets/svg/To homepage icon (1).svg"> </button>
+
+                        </div>
+                      </div>
+                      <div class="inputButtonBack back-button-padding">
+                        <div class="clear-transformation">
+                          <button type="submit" (click)=previousStep()><img class="arrow-botton"
+                              src="/assets/svg/Arrow to left (2nd style white).svg"> Back </button>
+
+                        </div>
+                      </div>
+                      <div class="inputButtonNext next-button-padding">
+                        <div class="clear-transformation">
+                          <button type="submit" (click)="nextStep()">Next <img class="arrow-botton"
+                              src="/assets/svg/Arrow to right (2nd style white).svg"> </button>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+            <div class="col-1">
+              &nbsp;
+            </div>
+          </div>
+          <br>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+
+
+  </mat-tab>
+  <mat-tab> Content 3 </mat-tab>
+</mat-tab-group>
+
+<div class="container-fluid ">
+  <div class="row">
+    <div class="col"></div>
+    <div class="col fixed-content no-gutters">
+      <div class="row no-gutters padding-forms">
+        <div class="col-2">
+          &nbsp;
+        </div>
+        <div class="col-9">
+          <div class="form-padding">
+
+
+
+
+
+
+          </div>
+        </div>
+        <div class="col-1">
+          &nbsp;
+        </div>
+      </div>
+      <br>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>

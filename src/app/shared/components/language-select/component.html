@@ -1,0 +1,19 @@
+<div class="bbs-language-select">
+	<div
+		(click)="toggleLanguageSelect()"
+		class="bbs-language-select__selected">
+		<img
+			alt="{{ selected }}"
+			[src]="setFlagSrc(selected)">
+	</div>
+	<ul *ngIf="toggleSelect">
+		<li
+			(click)="changeLanguage(language)"
+			*ngFor="let language of list">
+			<img
+				alt="{{ language }}"
+				[src]="setFlagSrc(language)">
+		</li>
+	</ul>
+</div>
+<!-- TODO: low priority, click zone outside implement and better inside -->
