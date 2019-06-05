@@ -6,22 +6,20 @@
 }
 
 .first-title {
-	color: #fff;
-	font-family: "TeXGyreAdventor-Italic";
-	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-	font-size: 1.31rem;
-	margin-top: 0.3rem;
-	padding-left: 0.5rem;
+  color: #fff;
+  font-family: "TeXGyreAdventor-Italic";
+  font-size: 1.36rem;
+  margin-top: 0.5rem;
+  padding-left: 0.3rem;
 }
 
 .second-title {
-	color: #fcd2b2;
-	font-family: "TeXGyreAdventor-Italic";
-	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-	font-size: 1.25rem;
-	margin-top: 0.16rem;
-	padding-left: 0.5rem;
-	line-height: 1.61rem;
+  color: #fcd2b2;
+  font-family: "TeXGyreAdventor-Italic";
+  font-size: 1.29rem;
+  margin-top: 0.1rem;
+  padding-left: 0.2rem;
+  line-height: 1.61rem;
 }
 .el-icon {
   display: inline-block;
@@ -34,7 +32,7 @@
   font-family: "TeXGyreAdventor-Regular";
   color: #fff;
   font-weight: 100;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+ 
 }
 .el-email {
   display: block;
@@ -99,44 +97,51 @@
   font-size: 0.8rem;
   font-family: "TeXGyreAdventor-Regular";
   color: #fcd2b2;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+ 
 }
 
 .ed-icon-main {
-  height: 6rem;
-
-  padding-left: 11.5rem;
-  
-  padding-top: .1rem;
+  height: 6.0rem;
+  padding-left: 11.3rem;
+  padding-top: 0rem;
 }
 
 .yhc-icon {
   padding-top: 1.5rem;
   height: 4.4rem;
-  text-shadow: #fcd2b2 1px;
+  
 
   float: left;
 }
 
+.yhc-text {
+  padding-top: 0.22rem;
+ 
+}
+
 .service-icon {
-	height: 3.39rem;
-	text-shadow: #fcd2b2 1px;
-	padding-left: 4.25rem;
-	padding-top: 0.4rem;
-	cursor: not-allowed;
+  height: 3.6rem;
+  
+  padding-left: 4.3rem;
+  padding-top: 0.1rem;
+  cursor: not-allowed;
 }
 .home-cleaning-icon{
-	height: 3.6rem;
-	text-shadow: #fcd2b2 1px;
-	padding-left: 1rem;
-	padding-top: 0.3rem;
-	cursor: not-allowed;
+  height: 3.9rem;
+  
+  padding-left: 1.4rem;
+  padding-top: 0rem;
+  cursor: not-allowed;
+}
+.home-removals-icon {
+  height: 2.9rem;
+  
+  margin-top: 0.6rem;
+  padding-left: 0.7rem;
 }
 
-.home-removals-icon {
-  height: 4.6rem;
-  text-shadow: #fcd2b2 1px;
-
+.home-removals-text {
+  padding-top: 0.22rem;
 }
 
 .slm-text {
@@ -149,10 +154,11 @@
 
 .hr-text {
   padding-left: 0.8rem;
+    letter-spacing: 0.02rem !important;
 }
 
 .ed-padding {
-  padding-top: 0.5rem;
+  padding-top: 0.3rem;
 }
 .yhc-icon-clear {
   
@@ -160,12 +166,12 @@
 }
 .services-text-color {
   margin:0;
-  color: rgb(227,	177,	191	);
-  font-size: 0.88rem;
+  color: rgb(248, 170, 191);
+  font-size: 0.89rem;
   font-family: "TeXGyreAdventor-Bold";
-  letter-spacing: 0rem; 
+  letter-spacing: 0.01rem; 
   height: 17px;
-  text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.31);
+ 
 }
 
 .white-text {
@@ -178,7 +184,7 @@
   font-family: "TeXGyreAdventor-Italic";
   color: #fff;
   font-size: 2rem;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+ 
 }
 
 .lbs {
@@ -187,7 +193,7 @@
   font-family: "TeXGyreAdventor-BoldItalic";
   font-size: 2rem;
   color: #fdd2af;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  
 }
 
 .align-left-wop {
