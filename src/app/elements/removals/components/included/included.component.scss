@@ -1,3 +1,86 @@
+.title{
+  font-family: "TeXGyreAdventor-BoldItalic";
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  font-size: 1.17rem;
+}
+
+.title-bottom {
+	font-family: "TeXGyreAdventor-BoldItalic";
+	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+	font-size: 0.85rem;
+	padding-left: 0.4rem;
+}
+
+.title-bottom-long {
+	font-family: "TeXGyreAdventor-BoldItalic";
+	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+	font-size: 0.85rem;
+	padding-left: 0.4rem;
+	line-height: 1.2rem;
+	padding-top: 0.1rem;
+}
+
+
+.cancel-icon {
+	width: 6.78rem !important;
+	padding-top: 0.4rem;
+}
+.price {
+  width: 3.6rem !important;
+}
+.info {
+  width: 2.3rem !important;
+}
+.loading-icon {
+	width: 9.8rem !important;
+	padding-top: 0.7rem;
+}
+
+.insured-icon {
+	width: 8.6rem !important;
+	padding-top: 0.5rem;
+}
+.fuel-icon {
+	width: 8rem !important;
+	padding-top: 0.7rem;
+}
+.gold-text {
+  color: #fcd2b2;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.text-border-left-golden {
+  border-left:2px solid  #fcd2b2;
+  font-family: "TeXGyreAdventor-Bold";
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  font-size: 0.84rem;
+  box-shadow: -5px 0 2px -5px #333;
+  color:#fff;
+  text-align: left;
+  padding-left:0.4rem;
+  line-height: 1.1rem;
+}
+.what-included {
+  font-family: "TeXGyreAdventor-Bold";
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  font-size: 1.17rem;
+}
+
+.text-underline-gold {
+  text-decoration: underline;
+  text-decoration-color: #fcd2b2;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
 .content {
   background-color: rgb(216, 92, 125);
   padding-top: 26px;
@@ -65,22 +148,22 @@
 }
 
 .inputField {
-  height: 37px;
+  height: 65px;
   display: inline-block;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  padding-left: 18px;
-  padding-top: 10px;
+  padding-left: 13px;
+  padding-top: 3px;
   padding-bottom: 17px;
   padding-right: 18px;
   border: none;
-  width: 30.5rem;
+  width: 30.6rem;
   -webkit-border-radius: 6px;
   border-radius: 6px;
   -o-text-overflow: clip;
   text-overflow: clip;
-  background: rgba(168, 48, 75, 1);
+ 
   -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
   -webkit-transform: skewX(-10deg);
@@ -93,7 +176,6 @@
   padding-left: 1.2rem;
   letter-spacing: -0.05rem;
   border: none;
-  width: 8.33rem;
   border-radius: 6px;
   text-overflow: clip;
   background-color: rgb(184, 30, 73);
@@ -108,7 +190,7 @@
   transform: skewX(-10deg);
   padding-top: 0.27rem;
   height: 2.5rem;
-  width: 9.2rem;
+  width: 12.4rem;
 }
 .inputField input {
   font-size: 1.2rem;
@@ -116,7 +198,7 @@
   border: none;
   text-align: center;
   color: #fcd2b2;
-  background: rgba(168, 48, 75, 0.1);
+  
   padding-left: 1rem;
   padding-bottom: 0.8rem;
   box-shadow: 0;
@@ -126,14 +208,60 @@
 .golden-border {
   border-bottom: 1px solid #fdd2af;
   height: 39px;
-  margin-bottom: 0.3rem;
+ 
 }
-.inputField input::placeholder {
+.inputField2::placeholder {
+  color: #fff;
+  opacity:1;
+}
+
+input::-webkit-input-placeholder {
+  color: #fff;
+  opacity:1;
+}
+input:focus::-webkit-input-placeholder {
+  color: rgb(197,140,152	);;
+}
+
+/* Firefox < 19 */
+input:-moz-placeholder {
+  color: #fff;
+  opacity:1;
+}
+input:focus:-moz-placeholder {
+  color: rgb(197,140,152	);
+}
+
+/* Firefox > 19 */
+input::-moz-placeholder {
+  color: #fff;
+  opacity:1;
+}
+input:focus::-moz-placeholder {
+  color: rgb(197,140,152	);;
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
   color: #fff;
 }
+input:focus:-ms-input-placeholder {
+  color: rgb(197,140,152	);;
+}
+
+.inputTextOver {
+  font-size: 0.9rem;
+  letter-spacing: 0.02rem;
+  font-family: "TeXGyreAdventor-Bold";
+  color: #fff;
+  overflow: hidden;
+}
+
+
+
 .inputButton button {
   padding-left: 0.36rem;
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   font-family: "TeXGyreAdventor-Bold";
   border: none;
   color: rgb(255, 255, 255);
@@ -174,7 +302,7 @@
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
-.ed-icon-main {
+.ed-icon-Included {
   height: 5.8rem;
   padding-left: 2.6rem;
 }
@@ -212,8 +340,8 @@
 }
 
 .padding {
-  padding-top:2.8rem;
-  margin-left: 5.9rem;
+  padding-top:1.6rem;
+  margin-left:6.5rem;
 }
 
 .form-padding {
@@ -226,8 +354,8 @@
 }
 
 .fss-button-padding {
-  margin-right: 7.6rem;
-  margin-top: 1rem;
+  margin-right: 7.3rem;
+  //margin-top: 0.5rem;
   float: right;
 }
 
@@ -248,6 +376,15 @@ padding-top:1.4rem;
 margin-left: 6.3rem;
 }
 
+.padding-email {
+  padding-top: 5.2rem;
+  margin-left: 9rem;
+  }
+
+  .email-icon-quote {
+    height: 3.7rem;
+  }
+
 .inputField2 input {
   font-size: 1.2rem;
   font-family: "TeXGyreAdventor-Regular";
@@ -259,7 +396,7 @@ margin-left: 6.3rem;
   padding-bottom: 0.8rem;
   box-shadow: 0;
   margin: 0;
-
+  width: 26.7rem;
 }
 
 .inputField2 {
@@ -298,11 +435,7 @@ margin-left: 6.3rem;
   margin-top: 1.0rem;
 }
 
-.new-button {
-  height: 2.2rem;
-  padding-bottom: 0.2rem;
-  padding-right:1rem;
-}
+
 
 .inputButtonNext {
   display: inline-block;
@@ -407,7 +540,7 @@ margin-right:0.9rem;
 .inputButtonNext button,
 .inputButtonNew button {
   padding-left: 0.36rem;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-family: "TeXGyreAdventor-Bold";
   border: none;
   color: rgb(255, 255, 255);
@@ -427,4 +560,215 @@ margin-right:0.9rem;
    .mat-tab-header {
     display: none !important;
   }
+}
+
+.quote {
+  font-size: 0.9rem;
+  font-family: "TeXGyreAdventor-Bold";
+  border: none;
+  color: white;
+  padding-left: 2.7rem;
+  letter-spacing: 0.03rem;
+}
+.prequote {
+  padding-top: 0;
+  
+}
+
+
+.toggle-button-text {
+  line-height: 22px;
+  font-size: 1.1rem;
+  margin-left: 0.5rem;
+  margin-top: 0.47rem;
+  letter-spacing: 0.019rem;
+}
+
+.toggle-button-text-2 {
+	line-height: 22px;
+	font-size: 1.1rem;
+	margin-left: 0.5rem;
+	margin-top: 0.47rem;
+	letter-spacing: 0.019rem;
+}
+.confirm-icon {
+	
+	vertical-align: top;
+	margin-left: 0.4rem;
+	margin-top: 0.2rem;
+}
+
+.confirm-element {
+  width:1.1rem;
+}
+
+.inputField2 {
+  height: 55px;
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding-left: 18px;
+  padding-top: 10px;
+  padding-bottom: 17px;
+  padding-right: 18px;
+  border: none;
+  width: 30.5rem;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  //background: rgba(168, 48, 75, 1);
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+}
+
+.contact-shortly {
+  font-size: 1.11rem;
+  font-family: "TeXGyreAdventor-Bold";
+  border: none;
+  color: white;
+ 
+  letter-spacing: 0.03rem;
+}
+
+
+.contact-container {
+  padding-left: .8rem;
+  padding-top:0.1rem;
+}
+
+
+.inputButtonNotify {
+	display: inline-block;
+	box-sizing: content-box;
+	padding-left: 1rem;
+	letter-spacing: -0.05rem;
+	border: none;
+	border-radius: 6px;
+	text-overflow: clip;
+  background-color: rgb(184, 30, 73);
+  background-color: rgba(184, 30, 73, 1);
+	clear: both;
+	box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+	-webkit-transform: skewX(-10deg);
+	transform: skewX(-10deg);
+	height: 1.4rem;
+	box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+	-webkit-transform: skewX(-10deg);
+	transform: skewX(-10deg);
+	padding-top: 0.27rem;
+	height: 2.5rem;
+	width: 7.6rem;
+}
+
+.inputButtonNotify button {
+  padding-left: 0.36rem;
+  font-size: 1.25rem;
+  font-family: "TeXGyreAdventor-Bold";
+  border: none;
+  color: rgb(255, 255, 255);
+  background: rgba(168, 48, 75, 1);
+  padding: 0;
+  box-shadow: 0;
+  margin: 0;
+  float: center;
+}
+
+.inputButtonNotify button::after {
+  clear: both;
+}
+
+
+
+
+.inputButtonReturn button {
+  padding-left: 0.36rem;
+  font-size: 1.25rem;
+  font-family: "TeXGyreAdventor-Bold";
+  border: none;
+  color: rgb(255, 255, 255);
+  background: rgba(168, 48, 75, 1);
+  padding: 0;
+  box-shadow: 0;
+  margin: 0;
+  float: center;
+}
+
+.inputButtonReturn {
+	display: inline-block;
+	box-sizing: content-box;
+	padding-left: 1rem;
+	letter-spacing: -0.05rem;
+	border: none;
+	border-radius: 6px;
+	text-overflow: clip;
+	background-color: rgb(184, 30, 73);
+  background-color: rgba(184, 30, 73, 1);
+	margin-left: 1.8rem;
+	box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+	-webkit-transform: skewX(-10deg);
+	transform: skewX(-10deg);
+	height: 1.4rem;
+	box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+	-webkit-transform: skewX(-10deg);
+	transform: skewX(-10deg);
+	padding-top: 0.27rem;
+	height: 2.5rem;
+	width: 17.6rem;
+	margin-top: 3.8rem;
+	/* margin-left: 1rem; */
+}
+
+.inputButtonReturn button {
+	padding-left: 0.36rem;
+	font-size: 1.25rem;
+	font-family: "TeXGyreAdventor-Bold";
+	border: none;
+	color: white;
+	background: transparent;
+	padding-left: 0.8rem;
+	/* box-shadow: 0; */
+	margin: 0;
+	/* float: center; */
+	letter-spacing: 0.01rem;
+}
+
+.inputButtonReturn button::after {
+  clear: both;
+}
+
+.fss-button-padding-return {
+	margin-right: 2.2rem;
+	float: right;
+}
+
+.new-button {
+	height: 2.2rem;
+	padding-bottom: 0.2rem;
+	padding-right: 1rem;
+	margin-left: 0.6rem;
+}
+
+
+
+.included{
+	margin-top: 4.4rem;
+	font-size: 1.044rem;
+	font-family: "TeXGyreAdventor-Bold";
+	border: none;
+	color: white;
+	letter-spacing: 0.01rem;
+	padding-left: 2rem;
+}
+
+.included a:hover {
+  text-decoration: underline;
+  text-decoration-color: #fcd2b2;
+}
+
+:host /deep/ .mat-tab-body-content {
+	overflow: hidden !important;
 }

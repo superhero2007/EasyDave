@@ -8,7 +8,7 @@ import {
   MatIconModule,
   MatInputModule,
   MatListModule, MatNativeDateModule, MatPaginatorModule, MatProgressSpinnerModule, MatSelectModule,
-  MatSidenavModule, MatSortModule, MatTableModule,
+  MatSidenavModule, MatSortModule, MatTableModule, MatButtonToggleModule,
   MatToolbarModule, MatTooltipModule, ShowOnDirtyErrorStateMatcher, MatCardModule, MatStepperModule, MatTabsModule, MatExpansionModule
 } from '@angular/material';
 
@@ -34,7 +34,8 @@ const MAT_MODULE = [
   MatStepperModule,
   MatCardModule,
   MatTabsModule,
-  MatExpansionModule
+  MatExpansionModule,
+  MatButtonToggleModule,
 ];
 
 @NgModule({

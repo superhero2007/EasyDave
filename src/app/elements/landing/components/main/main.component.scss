@@ -65,108 +65,23 @@
 }
 
 .inputField {
-  height: 37px;
+  height: 65px;
   display: inline-block;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  padding-left: 18px;
-  padding-top: 10px;
+  padding-left: 13px;
+  padding-top: 3px;
   padding-bottom: 17px;
   padding-right: 18px;
   border: none;
-  width: 30.5rem;
+  width: 30.6rem;
   -webkit-border-radius: 6px;
   border-radius: 6px;
   -o-text-overflow: clip;
   text-overflow: clip;
-  background: rgba(168, 48, 75, 1);
-  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
-  -webkit-transform: skewX(-10deg);
-  transform: skewX(-10deg);
-}
-
-.inputFieldExpPanel {
-  height: 37px;
-  display: inline-block;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 30.5rem;
-  text-overflow: clip;
-  padding-bottom: 0.2rem;
-}
-
-.expPanelField input {
-  font-size: 1.2rem;
-  font-family: "TeXGyreAdventor-Regular";
-  border: none;
-  text-align: center;
-  color: rgb(214, 81, 119);
-  padding-left: 1rem;
-background: #fff !important;
-  box-shadow: 0;
-  margin: 0;
-  width: 25rem;
-}
-
-.expPanelField input ::-webkit-input-placeholder,
-.expPanelField input ::-moz-placeholder,
-.expPanelField input ::-ms-input-placeholder,
-.expPanelField input ::-moz-placeholder {
-  color: rgb(225, 145, 165);
-}
-
-.expPanel {
-  display: inline-block;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-
-  border: none;
-  width: 32.67rem;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  background: rgba(168, 48, 75, 1);
-  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
-  -webkit-transform: skewX(-10deg);
-  transform: skewX(-10deg);
-}
-
-.expPanelField {
-  display: inline-block;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-
-  padding-top: 10px;
-  padding-bottom: 17px;
-  padding-right: 18px;
-  border: none;
-  width: 100%;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  background: rgba(254, 255, 255, 1);
-}
-.opened {
-  display: inline-block;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  margin-left: -1rem;
-  border: none;
-  width: 33.3rem;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  background: rgba(255, 255, 255, 1);
+  background-color: rgb(184, 30, 73);
+  background-color: rgba(184, 30, 73, 1);
   -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
   -webkit-transform: skewX(-10deg);
@@ -179,14 +94,13 @@ background: #fff !important;
   padding-left: 1.2rem;
   letter-spacing: -0.05rem;
   border: none;
-  width: 8.33rem;
   border-radius: 6px;
   text-overflow: clip;
   background-color: rgb(184, 30, 73);
   background-color: rgba(184, 30, 73, 1);
   clear: both;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
-  -webkit-transform: skewX(-10deg);
+ -webkit-transform: skewX(-10deg);
   transform: skewX(-10deg);
   height: 1.4rem;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
@@ -194,17 +108,17 @@ background: #fff !important;
   transform: skewX(-10deg);
   padding-top: 0.27rem;
   height: 2.5rem;
-  width: 9.2rem;
+  width: 12.4rem;
 }
 .inputField input {
   font-size: 1.2rem;
   font-family: "TeXGyreAdventor-Regular";
   border: none;
-  background-color: rgb(184, 30, 73);
-  background-color: rgba(184, 30, 73, 1);
   text-align: center;
   color: #fcd2b2;
+  
   padding-left: 1rem;
+  padding-bottom: 0rem;
   box-shadow: 0;
   margin: 0;
   width: 25rem;
@@ -212,18 +126,67 @@ background: #fff !important;
 .golden-border {
   border-bottom: 1px solid #fdd2af;
   height: 39px;
-  margin-bottom: 0.3rem;
+ 
 }
-.inputField input::placeholder {
+.inputField2::placeholder {
+  color: #fff;
+  opacity:1;
+}
+
+input::-webkit-input-placeholder {
+  color: #fff;
+  opacity:1;
+}
+input:focus::-webkit-input-placeholder {
+  color: rgb(197,140,152	);;
+}
+
+/* Firefox < 19 */
+input:-moz-placeholder {
+  color: #fff;
+  opacity:1;
+}
+input:focus:-moz-placeholder {
+  color: rgb(197,140,152	);
+}
+
+/* Firefox > 19 */
+input::-moz-placeholder {
+  color: #fff;
+  opacity:1;
+}
+input:focus::-moz-placeholder {
+  color: rgb(197,140,152	);;
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
   color: #fff;
 }
+input:focus:-ms-input-placeholder {
+  color: rgb(197,140,152	);;
+}
+
+.inputTextOver {
+  font-size: 0.9rem;
+  letter-spacing: 0.02rem;
+  font-family: "TeXGyreAdventor-Bold";
+  color: #fff;
+  overflow: hidden;
+}
+
+.gold-text {
+  color: #fcd2b2;
+}
+
 .inputButton button {
   padding-left: 0.36rem;
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   font-family: "TeXGyreAdventor-Bold";
   border: none;
   color: rgb(255, 255, 255);
-  background: rgba(168, 48, 75, 1);
+  background-color: rgb(184, 30, 73);
+  background-color: rgba(184, 30, 73, 1);
   padding: 0;
   box-shadow: 0;
   margin: 0;
@@ -298,8 +261,8 @@ background: #fff !important;
 }
 
 .padding {
-  padding-top: 2.8rem;
-  margin-left: 5.9rem;
+  padding-top:1.6rem;
+  margin-left:6.5rem;
 }
 
 .form-padding {
@@ -312,23 +275,36 @@ background: #fff !important;
 }
 
 .fss-button-padding {
-  margin-right: 7.2rem;
-  margin-top: 1rem;
+  margin-right: 7.5rem;
+  //margin-top: 0.5rem;
   float: right;
 }
+
+
+
 
 ::ng-deep .mat-horizontal-stepper-header-container {
   display: none !important;
 }
-.mat-stepper-horizontal,
-.mat-stepper-vertical {
-  background-color: transparent;
+.mat-stepper-horizontal, .mat-stepper-vertical {
+	background-color: transparent;
 }
 
+
+
 .padding2 {
-  padding-top: 1.4rem;
-  margin-left: 6.3rem;
+padding-top:1.4rem;
+margin-left: 6.3rem;
 }
+
+.padding-email {
+  padding-top: 5.2rem;
+  margin-left: 9rem;
+  }
+
+  .email-icon-quote {
+    height: 3.7rem;
+  }
 
 .inputField2 input {
   font-size: 1.2rem;
@@ -336,11 +312,13 @@ background: #fff !important;
   border: none;
   text-align: center;
   color: #fcd2b2;
-  background: rgba(168, 48, 75, 0.1);
+  background-color: rgb(184, 30, 73);
+  background-color: rgba(184, 30, 73, 1);
   padding-left: 1rem;
-  padding-bottom: 0.8rem;
+  
   box-shadow: 0;
   margin: 0;
+  width: 26.7rem;
 }
 
 .inputField2 {
@@ -359,7 +337,8 @@ background: #fff !important;
   border-radius: 6px;
   -o-text-overflow: clip;
   text-overflow: clip;
-  background: rgba(168, 48, 75, 1);
+  background-color: rgb(184, 30, 73);
+  background-color: rgba(184, 30, 73, 1);
   -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
   -webkit-transform: skewX(-10deg);
@@ -376,14 +355,10 @@ background: #fff !important;
 
 .fss-padding2 {
   margin-left: 6.1rem;
-  margin-top: 1rem;
+  margin-top: 1.0rem;
 }
 
-.new-button {
-  height: 2.2rem;
-  padding-bottom: 0.2rem;
-  padding-right: 1rem;
-}
+
 
 .inputButtonNext {
   display: inline-block;
@@ -398,7 +373,7 @@ background: #fff !important;
   background-color: rgba(184, 30, 73, 1);
   clear: both;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
-  -webkit-transform: skewX(-10deg);
+ -webkit-transform: skewX(-10deg);
   transform: skewX(-10deg);
   height: 1.4rem;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
@@ -406,8 +381,8 @@ background: #fff !important;
   transform: skewX(-10deg);
   padding-top: 0.27rem;
   height: 2.5rem;
-  text-align: left;
-  margin-right: 5.2rem;
+text-align: left;
+margin-right: 5.2rem;
 }
 
 .inputButtonBack {
@@ -424,7 +399,7 @@ background: #fff !important;
   background-color: rgba(184, 30, 73, 1);
   clear: both;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
-  -webkit-transform: skewX(-10deg);
+ -webkit-transform: skewX(-10deg);
   transform: skewX(-10deg);
   height: 1.4rem;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
@@ -432,7 +407,8 @@ background: #fff !important;
   transform: skewX(-10deg);
   padding-top: 0.27rem;
   height: 2.5rem;
-  margin-right: 0.9rem;
+margin-right:0.9rem;
+  
 }
 
 .inputButtonNew {
@@ -449,7 +425,7 @@ background: #fff !important;
   background-color: rgba(184, 30, 73, 1);
   clear: both;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
-  -webkit-transform: skewX(-10deg);
+ -webkit-transform: skewX(-10deg);
   transform: skewX(-10deg);
   height: 1.4rem;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
@@ -457,77 +433,268 @@ background: #fff !important;
   transform: skewX(-10deg);
   padding-top: 0.27rem;
   height: 2.5rem;
-  margin-right: 0.9rem;
+margin-right:0.9rem;
+  
 }
 
 .back-button-padding {
-  margin-top: 1rem;
+  margin-top:1rem;
+
 }
 
 .new-button-padding {
-  margin-top: 1rem;
+  margin-top:1rem;
+
 }
 
 .next-button-padding {
-  margin-top: 1rem;
+  margin-top:1rem;
+
 }
 .buttons2 {
   width: 100%;
-  float: right;
+  float:right;
   text-align: right;
-  margin-right: 2.2rem;
+ margin-right: 2.2rem;
 }
 
-.inputButtonBack button,
+
+.inputButtonBack button, 
 .inputButtonNext button,
 .inputButtonNew button {
   padding-left: 0.36rem;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-family: "TeXGyreAdventor-Bold";
   border: none;
   color: rgb(255, 255, 255);
-  background: rgba(168, 48, 75, 1);
+  background-color: rgb(184, 30, 73);
+  background-color: rgba(184, 30, 73, 1);
   padding: 0;
   box-shadow: 0;
   margin: 0;
   float: center;
 }
 
-.inputButtonBack button::after,
-.inputButtonNext button::after {
+.inputButtonBack button::after, .inputButtonNext button::after {
   clear: both;
 }
 
+
 :host /deep/ .invisible-tabs {
-  .mat-tab-header {
+   .mat-tab-header {
     display: none !important;
   }
 }
 
-.disable_ripple:hover {
-  background: rgba(168, 48, 75, 1) !important;
+.quote {
+  font-size: 0.9rem;
+  font-family: "TeXGyreAdventor-Bold";
+  border: none;
+  color: white;
+  padding-left: 2.7rem;
+  letter-spacing: 0.03rem;
 }
-
-::ng-deep mat-expansion-panel-header:hover {
-  background: rgba(168, 48, 75, 1) !important;
-}
-::ng-deep mat-expansion-panel-header {
-  height: 60px !important;
-}
-
-.padding-panel {
-  margin-left: 7.2rem;
-}
-
-:host /deep/ .mat-expansion-panel-body {
-  padding: 0 !important;
-}
-
-::ng-deep .mat-expansion-panel-body {
-  padding: 0;
-}
-
-.map {
-  overflow: hidden;
+.prequote {
+  padding-top: 0;
   
+}
+
+
+.toggle-button-text {
+  line-height: 22px;
+  font-size: 1.1rem;
+  margin-left: 0.5rem;
+  margin-top: 0.47rem;
+  letter-spacing: 0.019rem;
+}
+
+.toggle-button-text-2 {
+	line-height: 22px;
+	font-size: 1.1rem;
+	margin-left: 0.5rem;
+	margin-top: 0.47rem;
+	letter-spacing: 0.019rem;
+}
+.confirm-icon {
+	
+	vertical-align: top;
+	margin-left: 0.4rem;
+	margin-top: 0.2rem;
+}
+
+.confirm-element {
+  width:1.1rem;
+}
+
+.inputField2 {
+  height: 55px;
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding-left: 18px;
+  padding-top: 10px;
+  padding-bottom: 17px;
+  padding-right: 18px;
+  border: none;
+  width: 30.5rem;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  //background: rgba(168, 48, 75, 1);
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+}
+
+.contact-shortly {
+  font-size: 1.11rem;
+  font-family: "TeXGyreAdventor-Bold";
+  border: none;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.03rem;
+}
+
+
+.contact-container {
+  padding-left: .8rem;
+  padding-top:0.1rem;
+}
+
+
+.inputButtonNotify {
+	display: inline-block;
+	box-sizing: content-box;
+	padding-left: 1rem;
+	letter-spacing: -0.05rem;
+	border: none;
+	border-radius: 6px;
+	text-overflow: clip;
+  background-color: rgb(184, 30, 73);
+  background-color: rgba(184, 30, 73, 1);
+	clear: both;
+	box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+	-webkit-transform: skewX(-10deg);
+	transform: skewX(-10deg);
+	height: 1.4rem;
+	box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+	-webkit-transform: skewX(-10deg);
+	transform: skewX(-10deg);
+	padding-top: 0.27rem;
+	height: 2.5rem;
+	width: 7.6rem;
+}
+
+.inputButtonNotify button {
+  padding-left: 0.36rem;
+  font-size: 1.25rem;
+  font-family: "TeXGyreAdventor-Bold";
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(184, 30, 73);
+  background-color: rgba(184, 30, 73, 1);
+  padding: 0;
+  box-shadow: 0;
+  margin: 0;
+  float: center;
+}
+
+.inputButtonNotify button::after {
+  clear: both;
+}
+
+
+
+
+.inputButtonReturn button {
+  padding-left: 0.36rem;
+  font-size: 1.25rem;
+  font-family: "TeXGyreAdventor-Bold";
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(184, 30, 73);
+  background-color: rgba(184, 30, 73, 1);
+  padding: 0;
+  box-shadow: 0;
+  margin: 0;
+  float: center;
+}
+
+.inputButtonReturn {
+	display: inline-block;
+	box-sizing: content-box;
+	padding-left: 1rem;
+	letter-spacing: -0.05rem;
+	border: none;
+	border-radius: 6px;
+	text-overflow: clip;
+	background-color: rgb(184, 30, 73);
+  background-color: rgba(184, 30, 73, 1);
+	margin-left: 1.8rem;
+	box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+	-webkit-transform: skewX(-10deg);
+	transform: skewX(-10deg);
+	height: 1.4rem;
+	box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+	-webkit-transform: skewX(-10deg);
+	transform: skewX(-10deg);
+	padding-top: 0.27rem;
+	height: 2.5rem;
+	width: 17.6rem;
+	margin-top: 0rem;
+	/* margin-left: 1rem; */
+}
+
+.inputButtonReturn button {
+	padding-left: 0.36rem;
+	font-size: 1.25rem;
+	font-family: "TeXGyreAdventor-Bold";
+	border: none;
+	color: white;
+	background: transparent;
+	padding-left: 0.8rem;
+	/* box-shadow: 0; */
+	margin: 0;
+	/* float: center; */
+	letter-spacing: 0.01rem;
+}
+
+.inputButtonReturn button::after {
+  clear: both;
+}
+
+.fss-button-padding-return {
+	margin-right: 2.2rem;
+	//float: right;
+}
+
+.new-button {
+	height: 2.2rem;
+	padding-bottom: 0.2rem;
+	padding-right: 1rem;
+	margin-left: 0.6rem;
+}
+
+
+
+.included{
+	margin-top: 0.6rem;
+	font-size: 1.044rem;
+	font-family: "TeXGyreAdventor-Bold";
+	border: none;
+	color: white;
+	letter-spacing: 0.01rem;
+	padding-left: 2rem;
+}
+
+.included a:hover {
+  text-decoration: underline;
+  text-decoration-color: #fcd2b2;
+}
+
+:host /deep/ .mat-tab-body-content {
+	overflow: hidden !important;
 }

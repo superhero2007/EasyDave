@@ -13,7 +13,11 @@ const routes: Routes = [
     path: 'home-removals',
     loadChildren: './elements/removals/removals.module#RemovalsModule',
     data: {animation: 'removals'}
-  }
+  },{
+    path: '**',
+    loadChildren: './elements/landing/landing.module#LandingModule',
+    data: {animation: 'landing'}
+  },
 ];
 
 @NgModule({

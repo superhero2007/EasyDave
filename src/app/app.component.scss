@@ -305,29 +305,65 @@ h1.example-app-name {
   }
 }
 
-header {
-  background-color:rgb(159,36,75	);
-  height: 32px;
+
+.header-email-link a,
+.header-email-link a:hover {
+  color: #f7ecef;
 }
 
-header table,
-footer table {
-  width: 100%;
-  padding: 0;
-  border-spacing: 0;
-  padding: 0;
-  border-collapse: collapse;
+a {
+  padding-left: 5px;
+  color: #f7ecef;
+  font-size: 0.88rem;
+  font-family: "TeXGyreAdventor-Regular";
+}
+
+a:hover {
+  color: #f7ecef;
+  text-decoration: none;
+}
+
+a div svg:hover #email1 {
+  fill: #f7ecef;
+}
+a div svg:hover #email2 {
+  fill: #f7ecef;
+}
+a:hover #email1 {
+  fill: #f7ecef;
+}
+a:hover #email2 {
+  fill: #f7ecef;
+}
+
+a:hover #phone1 {
+  fill: #f7ecef;
+}
+a:hover #phone2 {
+  fill: #f7ecef;
+}
+a:hover #phone3 {
+  fill: #f7ecef;
+}
+
+a:focus {
+  outline: 0;
+}
+header {
+  background-color: rgb(184, 30, 73);
+  background-color: rgba(184, 30, 73, 1);
+  height: 37px;
 }
 
 .header-location-icon {
-  height: 0.88rem;
+  height: 0.88rem !important;
   padding-left: 0rem;
-  height: 14px;
+  margin-top: 0.3rem;
   vertical-align: middle;
 }
 
 .header-location-text {
-  padding-top: 0rem;
+  padding-top: 0.2rem;
   padding-left: 0.219rem;
   letter-spacing: 0.0171rem;
   color: #f7ecef;
@@ -343,7 +379,7 @@ footer table {
 }
 
 .header-location-text-phone {
-  padding-top: 0rem;
+  padding-top: 0.24rem;
   padding-left: 0.219rem;
   letter-spacing: 0.0171rem;
   color: #f7ecef;
@@ -380,30 +416,18 @@ footer table {
   height: 20px;
 }
 
-.header-table-td-left {
-  text-align: left;
-}
 
-.header-table-td-right {
-  text-align: right;
-}
-
-.header-align {
-  float: right;
-  display: flex;
-  align-items: center;
-}
-
-.header-align-left {
-  width: 360px;
-  float: left;
-  display: flex;
-  align-items: center;
+footer table {
+  width: 100%;
+  padding: 0;
+  border-spacing: 0;
+  padding: 0;
+  border-collapse: collapse;
 }
 
 .innerpage {
   min-height: 808px;
-  background-color: rgb(206,82,122);
+  //background-color: rgb(206,82,122);
 }
 
 //footer {
@@ -413,7 +437,9 @@ footer table {
 
 footer {
   min-height: 233px !important;
-  background-color: rgb(159,36,75)	;
+  background-color: rgb(184, 30, 73);
+  background-color: rgba(184, 30, 73, 1);
+
 }
 
 .footer-services-text {
@@ -617,4 +643,98 @@ a div.footer-social-icons svg:hover #facebook {
   color: #fff;
   font-size: 0.9rem;
   margin-left: 2.5rem;
+}
+
+
+
+
+.footer-social-icons svg:hover path.st00 {
+  fill: white;
+  transition: all ease 0.3s;
+}
+.footer-social-icons svg:hover path.st50 {
+  fill:#EC517D;
+  transition: all ease 0.3s;
+}
+
+.footer-social-icons svg:hover path.st01 {
+  fill: white;
+  transition: all ease 0.3s;
+}
+.footer-social-icons svg:hover path.st02 {
+  fill: white;
+  transition: all ease 0.3s;
+}
+.footer-social-icons svg:hover path.st61,
+.footer-social-icons svg:hover path.st51  {
+  fill:#EC517D;
+  transition: all ease 0.3s;
+}
+.footer-social-icons svg:hover path.st62  {
+  fill:#EC517D;
+  transition: all ease 0.3s;
+}
+
+.footer-social-icons svg {
+  fill: #ff0!important;
+}
+
+.footer-social-icons svg path {
+  transition: all ease 0.3s;
+}
+
+
+
+.fixed-content {
+  -ms-flex: 0 0 999px;
+  flex: 0 0 999px;
+  padding-top: 2px;
+}
+
+.header-table-td-left {
+  text-align: left;
+}
+
+.header-table-td-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+header table {
+  width: 100%;
+  margin-top: 0.2rem;
+  border-spacing: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+.container table {
+  margin-top: 80px;
+  width: 100%;
+  padding: 0;
+  border-spacing: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+
+.verticalhorizontal {
+  display: table-cell;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+div.inline {
+  float: left;
+  padding-top: 0.2rem;
 }
