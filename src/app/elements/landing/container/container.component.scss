@@ -15,11 +15,11 @@
 
 .second-title {
   color: #fcd2b2;
-  font-family: "TeXGyreAdventor-Italic";
-  font-size: 1.29rem;
+  font-family: "TeXGyreAdventor-BoldItalic";
+  font-size: 1.32rem;
   margin-top: 0.1rem;
   padding-left: 0.2rem;
-  line-height: 1.61rem;
+  line-height: 1.62rem;
 }
 .el-icon {
   display: inline-block;
@@ -32,7 +32,6 @@
   font-family: "TeXGyreAdventor-Regular";
   color: #fff;
   font-weight: 100;
- 
 }
 .el-email {
   display: block;
@@ -97,81 +96,94 @@
   font-size: 0.8rem;
   font-family: "TeXGyreAdventor-Regular";
   color: #fcd2b2;
- 
 }
 
 .ed-icon-main {
-  height: 6.0rem;
-  padding-left: 11.3rem;
+  height: 6rem;
+  width: 12.56rem;
+  margin-left: 11.3rem;
   padding-top: 0rem;
 }
 
 .yhc-icon {
   padding-top: 1.5rem;
   height: 4.4rem;
-  
 
   float: left;
 }
 
 .yhc-text {
-  padding-top: 0.22rem;
- 
+  padding-top: 0.656rem;
+  text-align: center;
 }
 
 .service-icon {
   height: 3.6rem;
-  
-  padding-left: 4.3rem;
+
   padding-top: 0.1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   cursor: not-allowed;
 }
-.home-cleaning-icon{
-  height: 3.9rem;
+
+.home-cleaning-icon {
+  height: 3.7rem;
+  margin-left: 1.1rem;
+  margin-top: -0.1rem;
+  margin-right: 1.2rem;
+  cursor: not-allowed;
+}
+.rentalmgmt {
+  margin-left: 2.0rem;
+  margin-right: 2.4rem;
+  cursor: not-allowed;
+}
+
+.cleaningmgmt {
   
-  padding-left: 1.4rem;
-  padding-top: 0rem;
+  margin-right: 2.6rem;
   cursor: not-allowed;
 }
+
 .home-removals-icon {
   height: 2.9rem;
-  
   margin-top: 0.6rem;
-  padding-left: 0.7rem;
+  margin-left: 0.7rem;
+  margin-right: 2.5rem;
 }
 
 .home-removals-text {
-  padding-top: 0.22rem;
+  padding-top: 0.4rem;
 }
 
 .slm-text {
- padding-left: 3rem;
+  margin-left: -0.7rem;
 }
 
 .hc-text {
-  padding-left: 1rem;
+  padding-left: 0rem;
+  padding-top: 0.67rem;
+  text-align: center;
+  width: 8.4rem;
 }
 
 .hr-text {
   padding-left: 0.8rem;
-    letter-spacing: 0.02rem !important;
+  letter-spacing: 0.02rem !important;
 }
 
 .ed-padding {
   padding-top: 0.3rem;
 }
 .yhc-icon-clear {
-  
   padding-top: 0;
 }
 .services-text-color {
-  margin:0;
-  color: rgb(248, 170, 191);
+  //color: #f8aabf;
   font-size: 0.89rem;
   font-family: "TeXGyreAdventor-Bold";
-  letter-spacing: 0.01rem; 
+  letter-spacing: 0.01rem;
   height: 17px;
- 
 }
 
 .white-text {
@@ -180,11 +192,10 @@
 .lb {
   height: 2.4rem;
   margin-bottom: 0;
-  margin-left: 0.6rem;
+  margin-left: 0.4rem;
   font-family: "TeXGyreAdventor-Italic";
   color: #fff;
   font-size: 2rem;
- 
 }
 
 .lbs {
@@ -193,13 +204,12 @@
   font-family: "TeXGyreAdventor-BoldItalic";
   font-size: 2rem;
   color: #fdd2af;
-  
 }
 
 .align-left-wop {
   float: left;
   padding-left: 0rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   padding-top: 0.5rem;
 }
 
@@ -215,7 +225,8 @@
   background-image: url("/assets/img/LongComment.svg");
   background-repeat: no-repeat;
   background-size: 786px 180px;
-  width: 780px;
+  background-position-y: -3px;
+  width: 786px;
   height: 170px;
   /*margin-top: 20px;*/
   margin-left: 84px;
@@ -223,7 +234,7 @@
   padding-left: 30px;
   padding-top: 30px;
 
-  font-weight: 900;
+  
   -webkit-border-radius: 20px;
   border-radius: 20px;
   -o-text-overflow: clip;
@@ -240,20 +251,40 @@
   margin-right: 5rem;
 }
 
+// .ed-logo {
 
-.ed-logo {
-
-
-}
+// }
 
 .ed-logo-icon {
   height: 36.2rem;
+  width: 15.78rem;
   position: absolute;
-z-index: 100;
-top: 9.5rem;
-float:left;
+  z-index: 100;
+  top: 9.2rem;
+  float: left;
 }
 
 .relative {
-  position: relative
+  position: relative;
+}
+.typewriter {
+  //font-family: Courier, monospace;
+  display: inline-block;
+}
+
+.typewriter-text p{
+  overflow: hidden;
+  animation: typing 1s steps(30, end), blink 0.75s step-end infinite;
+  white-space: nowrap;
+  height: 2.6rem;
+  line-height: 2.1rem;
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }

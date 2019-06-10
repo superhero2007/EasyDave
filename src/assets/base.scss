@@ -27,49 +27,60 @@
 @font-face {
   font-family: "TeXGyreAdventor-Bold";
   src: url("src/assets/fonts/TeXGyreAdventor-Bold.ttf") format("truetype");
-  font-weigth: 400;
+  font-weigth: normal;
 }
 
 @font-face {
   font-family: "TeXGyreAdventor-BoldItalic";
   src: url("src/assets/fonts/TeXGyreAdventor-BoldItalic.ttf") format("truetype");
-  font-weigth: 400;
+  font-weigth: normal;
 }
 
 @font-face {
   font-family: "TeXGyreAdventor-Italic";
   src: url("src/assets/fonts/TeXGyreAdventor-Italic.ttf") format("truetype");
-  font-weigth: 400;
+  font-weigth: normal;
 }
 
 @font-face {
   font-family: "TeXGyreAdventor-Regular";
   src: url("src/assets/fonts/TeXGyreAdventor-Regular.ttf") format("truetype");
-  font-weigth: 400;
+  font-weigth: normal;
 }
 
 html {
   position: relative;
-  //min-height: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
-html,
 body {
+  background-color: rgb(236, 81, 125);
+    background-color: rgba(236, 81, 125, 1);
   width: 100%;
   //min-height: 100%;
   //overflow: hidden;
   // background-color: rgb(236, 81, 125);
   // background-color: rgba(236, 81, 125, 1);
-}
-html { -webkit-font-smoothing: subpixel-antialiased; 
-  -webkit-text-size-adjust: none;
-  -webkit-text-size-adjust: 80%;
-  -webkit-backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+
+  -moz-font-feature-settings: "kern";
+
   -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  font-weight: 400;
+
+  -moz-osx-font-smoothing: grayscale;
+
+  // -webkit-font-smoothing: subpixel-antialiased;
+  // -webkit-font-smoothing: antialiased;
 }
+
+// @media screen {
+//   body{
+//     -webkit-text-size-adjust: none;
+//   }
+// }
 body {
   app-component {
     //height: 100%;
@@ -77,11 +88,11 @@ body {
     display: block;
     width: 100%;
     //height: 100vh;
-   // background-image: url("/assets/bg/Temporary Website 2.jpg");
+    background-image: url("/assets/bg/Temporary Website 2.jpg");
     background-size: 117%;
     background-position-x: -7.6rem;
-    background-color: rgb(236, 81, 125);
-    background-color: rgba(236, 81, 125, 1);
+    //background-color: rgb(236, 81, 125);
+    //background-color: rgba(236, 81, 125, 1);
   }
 }
 
@@ -101,7 +112,7 @@ input[type="number"] {
 
 circle {
   stroke-width: 5% !important;
-  stroke: $primary-dark !important;
+  //stroke: $primary-dark !important;
 }
 
 .custom-button {
@@ -314,12 +325,12 @@ mat-checkbox {
   }
 }
 
-.custom-chip {
-  &-primary {
-    /*background-color: $primary-dark !important;
-    color: #ffffff !important;*/
-  }
-}
+// .custom-chip {
+//   &-primary {
+//     /*background-color: $primary-dark !important;
+//     color: #ffffff !important;*/
+//   }
+// }
 
 /*.mat-form-field-flex {
   border: solid 0.5px;
@@ -369,26 +380,19 @@ a div.footer-social-icons svg:hover #facebook {
 }
 
 .landing-icon1 {
-  padding-top: 0.5em;
-
+  padding-top: 0.65em;
   width: 2.8rem;
-  
   fill: white;
-  
-  padding-right: 0.3rem;
-  
-  margin-left: .8rem;
 }
-
 
 .landing-icon2 {
-	padding-top: 0.6rem;
-	width: 2.67rem;
-	fill: white;
-	margin-left: 1.2rem;
+  padding-top: 0.6rem;
+  width: 2.87em;
+  fill: white;
+  margin-left: 0.92rem;
 }
 
-.landing-icon1 svg:hover path.lau0,
+.landing-icon1 svg:hover path.lu0,
 .landing-icon2 svg:hover path.lau0 {
   fill: #fcd2b2;
   //transition: all ease 0.3s;
@@ -405,15 +409,16 @@ a div.footer-social-icons svg:hover #facebook {
 }
 
 .landing-button:hover,
-.landing-button:hover path.lau0 {
+.landing-button:hover path.lau0,
+.landing-button:hover path.lu0  {
   fill: #fcd2b2;
   color: #fcd2b2;
- // transition: all ease 0.3s;
+  // transition: all ease 0.3s;
 }
 
-
 .mat-button-toggle-checked,
-.mat-button-toggle-checked path.lau0 {
+.mat-button-toggle-checked path.lau0,
+.mat-button-toggle-checked path.lu0  {
   fill: #fcd2b2;
   color: #fcd2b2;
 }
@@ -422,8 +427,15 @@ a div.footer-social-icons svg:hover #facebook {
   border: none;
 }
 
+.mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
+  line-height: 48px;
+  padding-left: 9px !important;
+  padding-right: 5px !important;
+}
+
 .mat-button-toggle-group-appearance-standard .mat-button-toggle + .mat-button-toggle {
   border: none;
+  background: transparent;
 }
 
 .mat-button-toggle-checked.mat-button-toggle-appearance-standard {
@@ -431,20 +443,77 @@ a div.footer-social-icons svg:hover #facebook {
 }
 
 .mat-button-toggle-label-content {
-	display: unset !important;
+  //display: unset !important;
+  display: flex !important;
 }
 
-.mat-button-toggle-group, .mat-button-toggle-standalone {
-	height: 63px;
+.mat-button-toggle-group,
+.mat-button-toggle-standalone {
+  height: 63px;
 }
 
+mat-button-toggle:hover,
+mat-button-toggle:focus {
+  background: none !important;
+  outline: none;
+}
+.mat-button-toggle-checked {
+  background: unset !important;
+}
+.mat-button-toggle-appearance-standard:not(.mat-button-toggle-disabled):hover .mat-button-toggle-focus-overlay {
+  opacity: 0 !important;
+}
+
+.mat-button-toggle-appearance-standard .mat-button-toggle-focus-overlay {
+  background-color: none !important;
+}
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+  outline: none;
+  background: transparent;
 }
 
 .shadow {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.41);
+}
+
+.mat-input-element {
+  caret-color: none !important;
+}
+
+.cleaningmgmt:hover path.hhrm0,
+.rentalmgmt:hover path.slm0 {
+  fill: #fcd2b2;
+  color: #fcd2b2 !important;
+}
+
+.innerpage svg {
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3));
+}
+
+.mat-tab-group svg {
+  filter:none;
+}
+
+.header-email-link svg:hover path.eml0,
+.header-location-icon-phone svg:hover path.pho0 {
+  fill: #fcd2b2;
+  //transition: all ease 0.3s;
+}
+
+header a:hover #eml0 {
+  fill: #f7ecef;
+}
+
+header a:hover #eml1 {
+  fill: #f7ecef;
+}
+
+header a:hover .pho0 {
+  fill: #f7ecef;
+}
+header a div svg:hover .eml0 {
+  fill: #f7ecef;
 }

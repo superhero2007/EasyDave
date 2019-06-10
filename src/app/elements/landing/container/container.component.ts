@@ -15,7 +15,10 @@ import {DateTimeAdapter} from 'ng-pick-datetime';
 export class ContainerComponent extends RouterAnimationBaseComponent implements OnInit, OnDestroy {
   address: Object;
   establishmentAddress: Object;
-
+  public serviceText1: string="Rental Management";
+  public service1TextColor: string="#f8aabf";
+  public service2TextColor: string="#f8aabf";
+  public serviceText2: string="Home Cleaning";
   formattedAddress: string;
   formattedEstablishmentAddress: string;
 
@@ -108,5 +111,17 @@ export class ContainerComponent extends RouterAnimationBaseComponent implements 
       phone = this.getAddrComponent(place, COMPONENT_TEMPLATE);
     return phone;
   }
+  changeText1(value) {
+    this.serviceText1=value;
+  }
+  changeText2(value) {
+    this.serviceText2=value;
+  }
 
+  change1TextColor(value) {
+    this.service1TextColor=value;
+  }
+  change2TextColor(value) {
+    this.service2TextColor=value;
+  }
 }

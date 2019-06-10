@@ -8,30 +8,22 @@
             <div class="col-2">
               &nbsp;
             </div>
-            <div class="col-9">
+            <div class="col-9" >
               <div class="form-padding">
                 <form>
                   <div class="padding" style="padding-left:1rem;">
                     <div class="inputField">
-                      <div class="">
-                        <div class="clear-transformation">
-                          <div class="inputTextOver">
-                            <span class="gold-text" style="text-decoration-line: line-through;">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            </span>
-                            &nbsp;&nbsp;Make your selection&nbsp;
-                            <span class="gold-text" style="text-decoration-line: line-through;">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            </span>
-                          </div>
+                      <div class="clear-transformation">
+                        <div class=" textOver">
+                          <span class="inputTextOver">
+                           
+                            Make your selection
+                            
+                          </span>
 
                         </div>
                       </div>
-                      <div class="">
+                      <div class="" style="margin-top:0.4rem">
                         <div class="clear-transformation">
                           <mat-button-toggle-group #group="matButtonToggleGroup" value="unselected">
                             <mat-button-toggle value="unselected" disableRipple class="landing-button">
@@ -42,7 +34,7 @@
                                 I'd like to receive<br>
                                 a removal quote
                               </div>
-                              <div class="confirm-element" style="float: left; width:1.1rem;">
+                              <div class="confirm-element" style="float: left; width:1.2rem;">
                                 <div [hidden]="group.value!=='unselected'">
                                   <img class="confirm-icon" height="26px" src="/assets/img/ConfirmInCircleGold.svg">
                                 </div>
@@ -56,9 +48,9 @@
                                 Notify me about<br>
                                 EasyDave launch
                               </div>
-                              <div class="confirm-element" style="float: left; width:1.1rem;">
+                              <div class="confirm-element" style="float: left; width:1.2rem;">
                                 <div [hidden]="group.value!=='selected'">
-                                  <img class="confirm-icon" height="26px" src="/assets/img/ConfirmInCircleGold.svg">
+                                  <img class="confirm-icon2" height="26px" src="/assets/img/ConfirmInCircleGold.svg">
                                 </div>
                               </div>
                             </mat-button-toggle>
@@ -70,13 +62,16 @@
                   <div class="fss-padding">
                     <div class="inputField2">
                       <div class="golden-border">
-                        <div class="clear-transformation">
-                          <label class="">
+                        <div class="clear-transformation input-">
+                          <label class="" style="text-align: center;">
                             <span matPrefix><img class="location-icon" height="26px"
                                 src="/assets/img/EmailAddressGold.svg">
                               &nbsp;</span>
-                            <input type="email" matInput placeholder="e.g. dave@easydave.co" [formControl]="email"
-                              required />
+                            <input type="email" matInput  [formControl]="email"
+                              required autocomplete="off" />
+                              <div class="placeholder" *ngIf="email.value.length === 0">
+                                  e.g. dave<span>@</span>easydave.co
+                              </div>
                             <span [hidden]="email.errors" matSuffix><img class="location-icon" height="26px"
                                 src="/assets/img/ConfirmInCircleGold.svg"> &nbsp;</span>
 
@@ -96,7 +91,7 @@
               &nbsp;
             </div>
           </div>
-          <br>
+        
         </div>
         <div class="col"></div>
       </div>
@@ -104,7 +99,7 @@
 
   </mat-tab>
   <mat-tab >
-    <div class="container-fluid " style="min-height: 252px;">
+    <div class="container-fluid " style="min-height: 225px;">
       <div class="row">
         <div class="col"></div>
         <div class="col fixed-content no-gutters">
@@ -132,8 +127,8 @@
                     <img class="email-icon-quote" src="assets/svg/Newsletter (gold).svg">
                   </div>
                   <div class="contact-container" style="float: left;">
-                    <span class="contact-shortly">We'll keep you up to date with latest news <br>
-                      on the easyDave launch</span>
+                    <span class="contact-shortly">We'll keep you up to date with the latest news <br>
+                      on the EasyDave launch</span> 
                   </div>
 
                 </div>
@@ -144,7 +139,7 @@
               &nbsp;
             </div>
           </div>
-          <br>
+          
         </div>
         <div class="col"></div>
       </div>
@@ -163,11 +158,11 @@
           &nbsp;
         </div>
         <div class="col-9">
-          <div class="f">
+          <div class="f" style="margin-top: 0.41rem;">
             <div>
               <div class="inputButton fss-button-padding" *ngIf="selectedIndex===0 && group.value==='unselected'">
                 <div class="clear-transformation">
-                  <button type="submit" (click)="nextStep(group.value,email.value)">Requrest a quote <img
+                  <button type="submit" (click)="nextStep(group.value,email.value)">Request a quote <img
                       class="arrow-botton" src="/assets/img/ArrowToRight.svg"> </button>
                 </div>
               </div>
@@ -180,7 +175,7 @@
               <div *ngIf="selectedIndex===1">
                 <div style="float: left;" *ngIf="selectedIndex===1 && group.value==='unselected'">
                   <div class="included">
-                    <span><a [routerLink]="['/home-removals/what-is-included']">What's included in the removal
+                    <span><a [routerLink]="['/home-removals/what-is-included']" class="inchref">What's included in the removal
                         service?</a></span>
                   </div>
                 </div>
@@ -209,7 +204,7 @@
           &nbsp;
         </div>
       </div>
-      <br>
+      
     </div>
     <div class="col"></div>
   </div>
@@ -236,7 +231,7 @@
           &nbsp;
         </div>
       </div>
-      <br>
+     
     </div>
     <div class="col"></div>
   </div>

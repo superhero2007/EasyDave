@@ -2,9 +2,9 @@
     <div class="row">
         <div class="col"></div>
         <div class="col fixed-content no-gutters relative ">
-               
-                        <img class="ed-logo-icon" src="/assets/img/Dave.svg">
-                
+
+            <div class="ed-logo-icon" [inlineSVG]="'/assets/img/Dave.svg'"></div>
+
             <div class="row no-gutters ">
 
 
@@ -16,36 +16,58 @@
                                 <div class="bubble">
                                     <div class="row no-gutters ">
                                         <div class="col-2">
-                                            <div class="yhc-icon-clear"><div class="first-title shadow">I'm here</div>
-                                            <div class="second-title shadow">to help you<br>with</div></div>
-                                        </div>
-
-                                        
-                                        <div class="col-4">
-                                            <div class="yhc-icon-clear"><img class="service-icon"
-                                                    src="/assets/img/ShortLetManagement.svg"></div>
-                                                    <div class="yhc-text"><span class="services-text-color slm-text shadow">Rental
-                                                            Management</span></div>
-                                        </div>
-                                        
-                                        <div class="col-3">
-                                                <div class="yhc-icon-clear"><img class="home-removals-icon"
-                                                        src="/assets/img/Home Removals (Final).svg"></div>
-                                                        <div class="home-removals-text"><span class=" services-text-color hr-text white-text shadow">Home
-                                                                Removals</span></div>
-                                                                
+                                            <div class="yhc-icon-clear">
+                                                <div class="first-title shadow">I'm here</div>
+                                                <div class="second-title shadow">to help you<br>with</div>
                                             </div>
-                                        <div class="col-3">
-                                            <div class="yhc-icon-clear"><img class="home-cleaning-icon"
-                                                    src="/assets/img/HomeCleaning.svg"></div>
-                                                    <div class=""><span class="services-text-color hc-text shadow">Home
-                                                            Cleaning</span></div>
                                         </div>
 
-                                        
+
+                                        <div class="col-4">
+                                            <div class="rentalmgmt"
+                                                (mouseenter)="changeText1('Available Soon');;change1TextColor('#fcd2b2')"
+                                                (mouseleave)="changeText1('Rental Management');change1TextColor('#f8aabf')">
+                                                <div class="yhc-icon-clear">
+                                                    <div class="  service-icon"
+                                                        [inlineSVG]="'/assets/img/ShortLetManagement.svg'">
+                                                    </div>
+                                                </div>
+                                                <div class="yhc-text">
+                                                    <div class="services-text-color slm-text shadow"
+                                                        [style.color]="service1TextColor">{{serviceText1}}</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-3">
+                                            <div class="yhc-icon-clear">
+                                                <div class="home-removals-icon"
+                                                    [inlineSVG]="'/assets/img/Home Removals (Final).svg'"></div>
+                                            </div>
+                                            <div class="home-removals-text"><span
+                                                    class=" services-text-color hr-text white-text shadow">Home
+                                                    Removals</span></div>
+
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="cleaningmgmt" (mouseenter)="changeText2('Available Soon');change2TextColor('#fcd2b2')"
+                                            (mouseleave)="changeText2('Home Cleaning');change2TextColor('#f8aabf')">
+                                                <div class="yhc-icon-clear">
+                                                    <div class="home-cleaning-icon"
+                                                        
+                                                        [inlineSVG]="'/assets/img/HomeCleaning.svg'"></div>
+                                                </div>
+                                                <div class="">
+                                                    <div class="services-text-color hc-text shadow"
+                                                        [style.color]="service2TextColor">{{serviceText2}}</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
 
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -55,20 +77,19 @@
                     </div>
 
                     <div class="row no-gutters ed-padding ed-logo">
-                        
+
                         <div class="col-12">
                             <div class="align-left">
-                                <img class="ed-icon-main" src="/assets/img/EasyDaveDash.svg">
+                                <div class="ed-icon-main" [inlineSVG]="'/assets/img/EasyDave Logo + Slash.svg'"></div>
                             </div>
-                            
-                            <div class="align-left-wop">
-                                <p class="lb shadow">We're now open</p>
-                                <p class="lbs shadow">for pre-launch booking</p>
 
+                            <div class="align-left-wop typewriter-text">
+                                <p class="lb shadow ">We're now open</p>
+                                <p class="lbs shadow ">for pre-launch bookings</p>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
 
@@ -77,8 +98,8 @@
     </div>
 </div>
 <div class="container-fluid ">
-<div  [@routeAnimations]="prepareRoute(cleaningoutlet)">
+    <div [@routeAnimations]="prepareRoute(cleaningoutlet)">
         <router-outlet #cleaningoutlet="outlet"></router-outlet>
 
-</div>
+    </div>
 </div>

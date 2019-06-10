@@ -310,6 +310,7 @@ h1.example-app-name {
   color: #f7ecef;
 }
 
+
 header a {
   padding-left: 5px;
   color: #f7ecef;
@@ -334,28 +335,10 @@ footer-links a:hover {
   text-decoration: none;
 }
 
-header a div svg:hover #email1 {
-  fill: #f7ecef;
-}
-header a div svg:hover #email2 {
-  fill: #f7ecef;
-}
-header a:hover #email1 {
-  fill: #f7ecef;
-}
-header a:hover #email2 {
-  fill: #f7ecef;
-}
 
-header a:hover #phone1 {
-  fill: #f7ecef;
-}
-header a:hover #phone2 {
-  fill: #f7ecef;
-}
-header a:hover #phone3 {
-  fill: #f7ecef;
-}
+
+
+
 
 a:focus {
   outline: 0;
@@ -367,30 +350,28 @@ header {
 }
 
 .header-location-icon {
-  height: 0.88rem !important;
-  padding-left: 0rem;
-  margin-top: 0.3rem;
-  vertical-align: middle;
+  height: 16px;
+  width: 16px;
+  margin-right: 0.2rem;
 }
 
 .header-location-text {
-  padding-top: 0.2rem;
   padding-left: 0.219rem;
   letter-spacing: 0.0171rem;
   color: #f7ecef;
   font-size: 0.88rem;
   font-family: "TeXGyreAdventor-Regular";
+  width:15rem;
+  
 }
 
 .header-location-icon-phone {
-  height: 0.88rem;
-  padding-left: 0rem;
   height: 14px;
-  vertical-align: middle;
+  width: 14px;
+  margin: 1px;
 }
 
 .header-location-text-phone {
-  padding-top: 0.24rem;
   padding-left: 0.219rem;
   letter-spacing: 0.0171rem;
   color: #f7ecef;
@@ -399,19 +380,18 @@ header {
 }
 
 .header-location-icon-email {
-  height: 0.88rem;
-  padding-left: 0rem;
-  height: 17px;
-  vertical-align: middle;
+  height: 16px;
+  width: 16px;
+
 }
 
 .header-location-text-email {
-  padding-top: 0rem;
   padding-left: 0.219rem;
   letter-spacing: 0.0171rem;
   color: #f7ecef;
   font-size: 0.88rem;
   font-family: "TeXGyreAdventor-Regular";
+
 }
 
 .header-align {
@@ -424,7 +404,6 @@ header {
   width: 360px;
   float: left;
   display: flex;
-  height: 20px;
 }
 
 footer table {
@@ -620,7 +599,7 @@ a div.footer-social-icons svg:hover #facebook {
   color: #f7ecef;
 }
 .footer-links {
-  padding-top: 1.1rem;
+  padding-top: 0.9rem;
 }
 
 .width-links {
@@ -737,7 +716,6 @@ header table {
 
 .verticalhorizontal {
   display: table-cell;
-
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -746,5 +724,4 @@ header table {
 
 div.inline {
   float: left;
-  padding-top: 0.2rem;
 }

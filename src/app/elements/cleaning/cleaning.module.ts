@@ -8,6 +8,7 @@ import { CleaningRoutingModule } from './cleaning.routing.module';
 import { CleaningService } from './services/cleaning.service';
 import { SecondStepComponent } from './components/second-step/second-step.component';
 import { MainComponent } from './components/main/main.component';
+import { InlineSVGModule } from 'ng-inline-svg';
 
 @NgModule({ 
   declarations: [ContainerComponent, FirstStepComponent,SecondStepComponent,MainComponent],
@@ -16,6 +17,7 @@ import { MainComponent } from './components/main/main.component';
     SharedModule,
     RouterModule,
     CleaningRoutingModule,
+    InlineSVGModule.forRoot(),
   ],
   providers: [
     CleaningService,
