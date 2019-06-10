@@ -81,18 +81,17 @@
   transform: skewX(-10.5deg);
   background-color: rgb(184, 30, 73);
   background-color: rgba(184, 30, 73, 1);
-
 }
 
 .inputButton {
   display: inline-block;
   box-sizing: content-box;
-  padding-left: 1rem;
+  padding-left: 0.9rem;
   letter-spacing: -0.05rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   text-overflow: clip;
-  background-color: #b81e49;
+
   background-color: #b81e49;
   clear: both;
   -webkit-transform: skewX(-10.5deg);
@@ -101,9 +100,9 @@
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
   -webkit-transform: skewX(-10.5deg);
   transform: skewX(-10.5deg);
-  padding-top: 0.27rem;
-  height: 2.5rem;
-  width: 12.6rem;
+  padding-top: 0.17rem;
+  height: 2.6rem;
+  width: 12.7rem;
 }
 .inputField input {
   font-size: 1.2rem;
@@ -263,23 +262,21 @@ input:focus:-ms-input-placeholder {
   padding-left: 0rem;
   padding-bottom: 0.1rem;
   padding-top: 0.06rem;
+  transition: transform 0.8s;
 }
 
-.inputButtonNotify:hover {
-  .arrow-botton {
-    height: 0.95rem;
-    padding-left: 0.3rem;
-    padding-bottom: 0.1rem;
-    padding-top: 0.06rem;
-  }
+.inputButtonNotify:hover .arrow-botton {
+  // height: 0.95rem;
+  // padding-left: 0.3rem;
+  // padding-bottom: 0.1rem;
+  // padding-top: 0.06rem;
+  transform: translate(5px, 0px);
 }
 
 .inputButton:hover {
   .arrow-botton {
-    height: 0.95rem;
-    padding-left: 0.3rem;
-    padding-bottom: 0.1rem;
-    padding-top: 0.06rem;
+   
+    transform: translate(5px, 0px);
   }
 }
 .padding {
@@ -328,13 +325,21 @@ input:focus:-ms-input-placeholder {
   font-family: "TeXGyreAdventor-Regular";
   border: none;
   text-align: center;
-  color: #fcd2b2;
+  //color: #fcd2b2;
+  color:#fdd2af;
   background-color: rgb(184, 30, 73);
   background-color: rgba(184, 30, 73, 1);
   padding-left: 1rem;
   margin: 0;
 
   width: 26.7rem;
+  &:focus {
+    color: #fff;
+  }
+  
+}
+.inputField2 input:invalid {
+  color:#fff;
 }
 
 .inputField2 {
@@ -494,7 +499,7 @@ input:focus:-ms-input-placeholder {
   font-family: "TeXGyreAdventor-Bold";
   border: none;
   color: white;
-  padding-left: 2.7rem;
+  padding-left: 2.5rem;
   letter-spacing: 0.03rem;
 }
 .prequote {
@@ -549,13 +554,13 @@ input:focus:-ms-input-placeholder {
 .inputButtonNotify {
   display: inline-block;
   box-sizing: content-box;
-  padding-left: 1rem;
+  padding-left: 0.9rem;
   letter-spacing: -0.05rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   text-overflow: clip;
-  background-color: rgb(184, 30, 73);
-  background-color: rgba(184, 30, 73, 1);
+  background-color: #b81e49;
+  background-color: #b81e49;
   clear: both;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
   -webkit-transform: skewX(-10.5deg);
@@ -564,10 +569,10 @@ input:focus:-ms-input-placeholder {
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
   -webkit-transform: skewX(-10.5deg);
   transform: skewX(-10.5deg);
-  padding-top: 0.27rem;
-  height: 2.5rem;
-  width: 8.4rem;
-  transition: 0.3s;
+  padding-top: 0.17rem;
+  height: 2.6rem;
+  width: 8.5rem;
+  
 }
 
 .inputButtonNotify button {
@@ -580,13 +585,11 @@ input:focus:-ms-input-placeholder {
   background-color: transparent;
   /* padding: 0; */
   box-shadow: 0;
-  transition: 0.3s;
   /* margin: 0; */
 }
 
 .inputButtonNotify button::after {
   clear: both;
-  transition: 0.3s;
 }
 
 .inputButtonReturn button {
@@ -694,7 +697,7 @@ input:focus:-ms-input-placeholder {
   pointer-events: none;
   top: 6px;
   bottom: 2px;
-  left: 6px;
+  left: 4px;
   margin: auto;
   color: #fff;
   width: 100%;
@@ -712,7 +715,8 @@ input:focus:-ms-input-placeholder {
 input {
   &:focus {
     & + .placeholder {
-      display: none;
+      opacity: 0.5;
     }
   }
 }
+

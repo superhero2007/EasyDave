@@ -68,13 +68,12 @@
                                 src="/assets/img/EmailAddressGold.svg">
                               &nbsp;</span>
                             <input type="email" matInput  [formControl]="email"
-                              required autocomplete="off" />
+                              required autocomplete="off" [style.color]=""/>
                               <div class="placeholder" *ngIf="email.value.length === 0">
                                   e.g. dave<span>@</span>easydave.co
                               </div>
-                            <span [hidden]="email.errors" matSuffix><img class="location-icon" height="26px"
+                            <span *ngIf="!email.errors && !email.invalid && email.blur" matSuffix><img class="location-icon" height="26px"
                                 src="/assets/img/ConfirmInCircleGold.svg"> &nbsp;</span>
-
                           </label>
                         </div>
                       </div>

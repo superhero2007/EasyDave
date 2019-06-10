@@ -60,7 +60,8 @@ export class MainComponent implements OnInit {
 
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({
-      firstCtrl: ['', Validators.required]
+      firstCtrl: ['', Validators.required],
+      updateOn: 'blur'
     });
     console.log(this.selectedIndex);
    

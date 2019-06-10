@@ -435,7 +435,7 @@ footer {
   font-size: 0.909rem;
   padding-top: 0.4rem;
   letter-spacing: 0rem;
-  font-family: "TeXGyreAdventor-Bold";
+  font-family: "TeXGyreAdventor-BoldItalic";
 }
 .footer-services-link {
   color: #f7ecef;
@@ -599,7 +599,7 @@ a div.footer-social-icons svg:hover #facebook {
   color: #f7ecef;
 }
 .footer-links {
-  padding-top: 0.9rem;
+  padding-top: 0.65rem;
 }
 
 .width-links {
@@ -611,7 +611,7 @@ a div.footer-social-icons svg:hover #facebook {
 }
 
 .footer-love-logo {
-  height: 1.93rem;
+  height: 1.99rem;
   margin-top: 0.95rem;
   padding-left: 0.32rem;
 
@@ -724,4 +724,29 @@ header table {
 
 div.inline {
   float: left;
+}
+.underline:hover {
+  text-decoration: none; 
+  position: relative; 
+}   
+.underline:hover:after {
+  position: absolute;
+  height: 1px;
+  margin: 0 auto;
+  content: '';
+  left: 0;
+  right: 0;
+  width: 95%;
+  color: #000;
+  background-color:#fcd2b2;
+  left: 0;
+  bottom: -2px; /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+}
+
+.disabled {
+  opacity: 0.5;
+  &:hover {
+    color:#fcd2b2;
+    opacity: 1;
+  }
 }

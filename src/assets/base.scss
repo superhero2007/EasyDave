@@ -367,14 +367,16 @@ a div.footer-social-icons svg:hover #facebook {
   margin-left: 0.92rem;
 }
 
-.landing-icon1 svg:hover path.lu0,
-.landing-icon2 svg:hover path.lau0 {
+.landing-icon1 svg:hover .lu0,
+.landing-icon2 svg:hover .lau0 {
   fill: #fcd2b2;
+  stroke: #fcd2b2;
+  color:#fcd2b2;
   //transition: all ease 0.3s;
 }
 
-.landing-button {
-  width: 15.8rem;
+.landing-button { 
+  width: 15.8rem; 
   height: 3rem;
   color: #fff;
   font-size: 0.9rem;
@@ -384,18 +386,20 @@ a div.footer-social-icons svg:hover #facebook {
 }
 
 .landing-button:hover,
-.landing-button:hover path.lau0,
-.landing-button:hover path.lu0  {
+.landing-button:hover .lau0,
+.landing-button:hover .lu0   {
   fill: #fcd2b2;
   color: #fcd2b2;
+  stroke: #fcd2b2; 
   // transition: all ease 0.3s;
 }
-
+ 
 .mat-button-toggle-checked,
-.mat-button-toggle-checked path.lau0,
-.mat-button-toggle-checked path.lu0  {
+.mat-button-toggle-checked .lau0,
+.mat-button-toggle-checked .lu0   {
   fill: #fcd2b2;
   color: #fcd2b2;
+  stroke: #fcd2b2;
 }
 
 .mat-button-toggle-group-appearance-standard {
