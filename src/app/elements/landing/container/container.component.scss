@@ -272,19 +272,40 @@
   display: inline-block;
 }
 
-.typewriter-text p{
-  overflow: hidden;
-  animation: typing 1s steps(30, end), blink 0.75s step-end infinite;
-  white-space: nowrap;
-  height: 2.6rem;
-  line-height: 2.1rem;
+.typewriter-text {
+  p {
+    overflow: hidden;
+    white-space: nowrap;
+    height: 2.6rem;
+    line-height: 2.1rem;
+
+    &.lb {
+      animation: typing-first 16s steps(30, end) infinite;
+    }
+
+    &.lbs {
+      animation: typing-second 16s steps(30, end) infinite
+    }
+  }
+
+  &.second p {
+    width: 0;
+    animation-delay: 8s;
+  }
 }
 
-@keyframes typing {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
+@keyframes typing-first {
+  0% { width: 0; }
+  12% { width: 100%; }
+  37% { width: 100%; }
+  50% { width: 0; }
+  100% { width: 0; }
+}
+
+@keyframes typing-second {
+  0% { width: 0; }
+  12% { width: 0; }
+  25% { width: 100%; }
+  37% { width: 0; }
+  100% { width: 0; }
 }
