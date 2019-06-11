@@ -280,17 +280,17 @@
     line-height: 2.1rem;
 
     &.lb {
-      animation: typing-first 16s steps(30, end) infinite;
+      animation: typing-first 8s steps(30, end) infinite;
     }
 
     &.lbs {
-      animation: typing-second 16s steps(30, end) infinite
+      animation: typing-second 8s steps(30, end) infinite
     }
   }
 
   &.second p {
     width: 0;
-    animation-delay: 8s;
+    animation-delay: 4s;
   }
 }
 
